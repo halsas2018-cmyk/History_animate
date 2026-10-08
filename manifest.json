@@ -1,0 +1,45 @@
+{
+  "project": {
+    "project_id": "history_9573",
+    "title": "Mansa Musa's Golden Reign",
+    "description": "A historical narrative about the rise of the mali empire under mansa musa",
+    "output": {
+      "directory": "output",
+      "filename_pattern": "history_video_{project_id}.mp4",
+      "format": "mp4",
+      "resolution": {
+        "width": 1920,
+        "height": 1080
+      },
+      "fps": 30
+    }
+  },
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "title": "Mansa Musa's Golden Reign",
+      "description": "Part 1 of the historical narrative about the rise of the mali empire under mansa musa",
+      "image_path": "/root/whiteboard_anime/dynamic_history_video_project/scenes/scene_001/image.png",
+      "order": 1,
+      "duration": null,
+      "narration": "In 1324, a West African king set out on a pilgrimage so lavish it literally crashed the economy of Cairo. Mansa Musa, ruler of the Mali Empire, traveled with a caravan of sixty thousand men. They carried tons of raw gold, distributing so much wealth that the price of precious metal plummeted for a decade. Under his iron-willed leadership, Mali became the world\u2019s leading producer of gold and salt. Musa transformed Timbuktu into a global beacon of intellect and faith.",
+      "captions": null,
+      "transition": null,
+      "whiteboard_animator": null,
+      "remotion": null
+    },
+    {
+      "scene_id": "scene_002",
+      "title": "",
+      "description": "Part 2 of the historical narrative about the rise of the mali empire under mansa musa",
+      "image_path": "/root/whiteboard_anime/dynamic_history_video_project/scenes/scene_002/image.png",
+      "order": 2,
+      "duration": null,
+      "narration": "He commissioned grand mosques and massive libraries that drew scholars from across the Islamic world. His empire stretched across thousands of miles, controlling vital trans-Saharan trade routes. By the time he returned to Niani, his legend had already reached the maps of Europe. Mansa Musa remains history\u2019s wealthiest individual, a ruler who built an empire on more than just gold.",
+      "captions": null,
+      "transition": null,
+      "whiteboard_animator": null,
+      "remotion": null
+    }
+  ]
+}

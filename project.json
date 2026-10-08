@@ -1,0 +1,15 @@
+{
+  "project_id": "history_9573",
+  "title": "Mansa Musa's Golden Reign",
+  "description": "A historical narrative about the rise of the mali empire under mansa musa",
+  "output": {
+    "directory": "output",
+    "filename_pattern": "history_video_{project_id}.mp4",
+    "format": "mp4",
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    },
+    "fps": 30
+  }
+}

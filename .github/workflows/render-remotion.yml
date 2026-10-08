@@ -1,0 +1,35 @@
+name: Render Remotion Video
+
+on:
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: my-video
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: my-video/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Render video
+        run: npx remotion render MyComp out.mp4
+
+      - name: Upload rendered video
+        uses: actions/upload-artifact@v4
+        with:
+          name: remotion-video
+          path: my-video/out.mp4

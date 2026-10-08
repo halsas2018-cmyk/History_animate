@@ -1,0 +1,43 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Python environments
+venv/
+.venv/
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example
+
+# Pipeline-generated runs
+output/
+pipeline_runs/
+scenes/
+
+# Node dependencies
+my-video/node_modules/
+
+# Remotion local/generated directories
+my-video/.remotion/
+
+# Local rendered output (but NOT public assets)
+my-video/out.mp4
+my-video/giza-pyramid.mp4
+
+# Local agent configuration
+.claude/
+my-video/.claude/
+my-video/.agents/
+
+# Agent-generated reports
+my-video/CONFIG_ANALYSIS.txt
+my-video/CONFIG_VALIDATION_RESULT.txt
+my-video/FINAL_STATUS.txt
+my-video/IMPLEMENTATION_SUMMARY.md
+my-video/RENDER_ATTEMPT_REPORT.txt
+my-video/TASK_COMPLETION_SUMMARY.txt
+my-video/TIMING_VERIFICATION.txt
+my-video/VERIFICATION_RESULTS.txt
