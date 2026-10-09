@@ -12,10 +12,6 @@ jobs:
   render:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: dynamic_history_video_project
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
