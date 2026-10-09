@@ -433,124 +433,84 @@ class TestRunWhiteboardAnimate(unittest.TestCase):
         import shutil
         shutil.rmtree(self.temp_dir, ignore_errors=True)
 
-    @patch("whiteboard_integration.subprocess.run")
-    def test_correct_duration_passed(self, mock_run):
-        """Test that correct duration is passed to whiteboard-animate."""
-        mock_result = MagicMock()
-        mock_result.returncode = 0
-        mock_result.stdout = ""
-        mock_result.stderr = ""
-        mock_run.return_value = mock_result
+    @patch("whiteboard_integration.WhiteboardAnimator")
+    def test_correct_duration_passed(self, mock_animator_cls):
+        """Test that correct duration and 92% draw_duration are passed to WhiteboardAnimator."""
+        mock_animator = MagicMock()
+        mock_animator_cls.return_value = mock_animator
 
-        # Create output file to simulate successful run
-        self.output_path.write_bytes(b"fake mp4")
+        def side_effect(*args, **kwargs):
+            self.output_path.write_bytes(b"fake mp4")
+        mock_animator.render_to_file.side_effect = side_effect
 
-        run_whiteboard_animate(self.image_path, self.output_path, 15.5)
+        duration = 15.5
+        run_whiteboard_animate(self.image_path, self.output_path, duration)
 
-        # Verify the command was called with correct duration
-        mock_run.assert_called_once()
-        args = mock_run.call_args[0][0]
-        self.assertIn("--duration", args)
-        duration_idx = args.index("--duration")
-        self.assertEqual(args[duration_idx + 1], "15.5")
+        mock_animator.render_to_file.assert_called_once()
+        args, kwargs = mock_animator.render_to_file.call_args
+        # args: (img_array, draw_duration, total_duration, output_path)
+        draw_duration = args[1]
+        total_duration = args[2]
+        output_path_str = args[3]
 
-    @patch("whiteboard_integration.subprocess.run")
-    def test_command_structure(self, mock_run):
-        """Test the command structure is correct."""
-        mock_result = MagicMock()
-        mock_result.returncode = 0
-        mock_result.stdout = ""
-        mock_result.stderr = ""
-        mock_run.return_value = mock_result
+        self.assertAlmostEqual(draw_duration, duration * 0.92)
+        self.assertEqual(total_duration, duration)
+        self.assertEqual(output_path_str, str(self.output_path))
 
-        self.output_path.write_bytes(b"fake mp4")
-
-        run_whiteboard_animate(self.image_path, self.output_path, 10.0)
-
-        args = mock_run.call_args[0][0]
-        self.assertEqual(args[0], "whiteboard-animate")
-        self.assertEqual(args[1], str(self.image_path))
-        self.assertEqual(args[2], "-o")
-        self.assertEqual(args[3], str(self.output_path))
-        self.assertEqual(args[4], "--duration")
-        self.assertEqual(args[5], "10.0")
-
-    @patch("whiteboard_integration.subprocess.run")
-    def test_cli_failure_raises_error(self, mock_run):
-        """Test that CLI failure raises WhiteboardIntegrationError."""
-        mock_result = MagicMock()
-        mock_result.returncode = 1
-        mock_result.stdout = "error output"
-        mock_result.stderr = "error details"
-        mock_run.return_value = mock_result
+    @patch("whiteboard_integration.WhiteboardAnimator")
+    def test_render_failure_raises_error(self, mock_animator_cls):
+        """Test that render_to_file failure raises WhiteboardIntegrationError."""
+        mock_animator = MagicMock()
+        mock_animator_cls.return_value = mock_animator
+        mock_animator.render_to_file.side_effect = RuntimeError("Rendering engine error")
 
         with self.assertRaises(WhiteboardIntegrationError) as ctx:
             run_whiteboard_animate(self.image_path, self.output_path, 10.0)
-        self.assertIn("whiteboard-animate failed", str(ctx.exception))
-        self.assertIn("error details", str(ctx.exception))
+        self.assertIn("WhiteboardAnimator render failed", str(ctx.exception))
+        self.assertIn("Rendering engine error", str(ctx.exception))
 
-    @patch("whiteboard_integration.subprocess.run")
-    def test_timeout_raises_error(self, mock_run):
-        """Test that timeout raises WhiteboardIntegrationError."""
-        mock_run.side_effect = subprocess.TimeoutExpired("whiteboard-animate", 300)
-
-        with self.assertRaises(WhiteboardIntegrationError) as ctx:
-            run_whiteboard_animate(self.image_path, self.output_path, 10.0)
-        self.assertIn("timed out", str(ctx.exception))
-
-    @patch("whiteboard_integration.subprocess.run")
-    def test_output_not_created_raises_error(self, mock_run):
+    @patch("whiteboard_integration.WhiteboardAnimator")
+    def test_output_not_created_raises_error(self, mock_animator_cls):
         """Test that missing output file raises error."""
-        mock_result = MagicMock()
-        mock_result.returncode = 0
-        mock_result.stdout = ""
-        mock_result.stderr = ""
-        mock_run.return_value = mock_result
+        mock_animator = MagicMock()
+        mock_animator_cls.return_value = mock_animator
 
-        # Don't create output file
+        # Don't create output file in mock
         with self.assertRaises(WhiteboardIntegrationError) as ctx:
             run_whiteboard_animate(self.image_path, self.output_path, 10.0)
         self.assertIn("Output MP4 not created", str(ctx.exception))
 
-    @patch("whiteboard_integration.subprocess.run")
-    def test_empty_output_raises_error(self, mock_run):
+    @patch("whiteboard_integration.WhiteboardAnimator")
+    def test_empty_output_raises_error(self, mock_animator_cls):
         """Test that empty output file raises error."""
-        mock_result = MagicMock()
-        mock_result.returncode = 0
-        mock_result.stdout = ""
-        mock_result.stderr = ""
-        mock_run.return_value = mock_result
+        mock_animator = MagicMock()
+        mock_animator_cls.return_value = mock_animator
 
         # Create empty output file
-        self.output_path.write_bytes(b"")
+        def side_effect(*args, **kwargs):
+            self.output_path.write_bytes(b"")
+        mock_animator.render_to_file.side_effect = side_effect
 
         with self.assertRaises(WhiteboardIntegrationError) as ctx:
             run_whiteboard_animate(self.image_path, self.output_path, 10.0)
         self.assertIn("Output MP4 is empty", str(ctx.exception))
 
-    @patch("whiteboard_integration.subprocess.run")
-    def test_creates_output_directory(self, mock_run):
+    @patch("whiteboard_integration.WhiteboardAnimator")
+    def test_creates_output_directory(self, mock_animator_cls):
         """Test that output directory is created if it doesn't exist."""
-        mock_result = MagicMock()
-        mock_result.returncode = 0
-        mock_result.stdout = ""
-        mock_result.stderr = ""
-        mock_run.return_value = mock_result
+        mock_animator = MagicMock()
+        mock_animator_cls.return_value = mock_animator
 
         nested_output = Path(self.temp_dir) / "nested" / "dir" / "output.mp4"
-        # Don't create the nested directory
 
-        # Create the output file after the subprocess runs (simulated by mock)
         def side_effect(*args, **kwargs):
-            nested_output.parent.mkdir(parents=True, exist_ok=True)
             nested_output.write_bytes(b"fake mp4")
-            return mock_result
-        mock_run.side_effect = side_effect
+        mock_animator.render_to_file.side_effect = side_effect
 
         run_whiteboard_animate(self.image_path, nested_output, 10.0)
 
-        # The function should have created the directory
         self.assertTrue(nested_output.parent.exists())
+
 
 
 class TestProcessRunDirectory(unittest.TestCase):

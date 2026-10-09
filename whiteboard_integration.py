@@ -23,13 +23,14 @@ Validates all inputs strictly; fails clearly on any issue.
 """
 
 import json
-import subprocess
 import sys
 import tempfile
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+import numpy as np
 from PIL import Image
+from whiteboard_animator import WhiteboardAnimator
 
 
 class WhiteboardIntegrationError(Exception):
@@ -248,41 +249,44 @@ def validate_assets_dir(assets_dir: Path, visuals: List[Dict[str, Any]]) -> List
 
 def run_whiteboard_animate(image_path: Path, output_path: Path, duration: float) -> None:
     """
-    Run whiteboard-animate CLI on a single image with specified duration.
+    Render whiteboard animation using WhiteboardAnimator Python API.
 
     Raises:
-        WhiteboardIntegrationError: If the CLI fails or output is not created.
+        WhiteboardIntegrationError: If rendering fails or output is not created.
     """
     # Ensure output directory exists
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    cmd = [
-        "whiteboard-animate",
-        str(image_path),
-        "-o", str(output_path),
-        "--duration", str(duration),
-    ]
-
+    # Load image as RGB numpy array
     try:
-        result = subprocess.run(
-            cmd,
-            capture_output=True,
-            text=True,
-            timeout=300,  # 5 minute timeout per scene
-        )
-    except subprocess.TimeoutExpired:
-        raise WhiteboardIntegrationError(f"whiteboard-animate timed out after 300s for {image_path}")
-    except FileNotFoundError:
-        raise WhiteboardIntegrationError("whiteboard-animate CLI not found in PATH")
+        with Image.open(image_path) as img:
+            img_array = np.array(img.convert('RGB'))
+    except Image.UnidentifiedImageError:
+        raise WhiteboardIntegrationError(f"Cannot read image file {image_path}: Invalid PNG file (bad signature)")
     except Exception as e:
-        raise WhiteboardIntegrationError(f"Failed to run whiteboard-animate: {e}")
+        raise WhiteboardIntegrationError(f"Cannot read image file {image_path}: {e}")
 
-    if result.returncode != 0:
-        raise WhiteboardIntegrationError(
-            f"whiteboard-animate failed for {image_path} (exit code {result.returncode}):\n"
-            f"stdout: {result.stdout}\n"
-            f"stderr: {result.stderr}"
+    # Instantiate animator with default settings
+    animator = WhiteboardAnimator()
+
+    # Set durations
+    total_duration = duration
+    draw_duration = duration * 0.92
+
+    # Render using Python API
+    try:
+        animator.render_to_file(
+            img_array,
+            draw_duration,
+            total_duration,
+            str(output_path),
+            fps=24,
+            bitrate="1500k",
+            preset="veryfast",
+            element_plan=None,
         )
+    except Exception as e:
+        raise WhiteboardIntegrationError(f"WhiteboardAnimator render failed for {image_path}: {e}")
 
     # Verify output was created
     if not output_path.exists():

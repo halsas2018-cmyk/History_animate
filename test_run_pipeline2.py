@@ -6,6 +6,7 @@ Tests cover:
 - missing run directory
 - valid run directory
 - successful delegation to whiteboard_integration
+- copying generated scenes, narration, and visual_timing.json to Remotion public dir
 - integration failure propagation
 - CLI argument handling
 - successful CLI exit
@@ -34,7 +35,7 @@ def create_valid_png(path: Path) -> None:
 
 
 class TestRunPipeline2(unittest.TestCase):
-    """Tests for run_pipeline2 main function."""
+    """Tests for run_pipeline2 main function and asset copying."""
 
     def setUp(self):
         """Create a temporary directory for each test."""
@@ -43,6 +44,8 @@ class TestRunPipeline2(unittest.TestCase):
         self.run_dir.mkdir()
         self.assets_dir = self.run_dir / "assets"
         self.assets_dir.mkdir()
+        self.public_dir = Path(self.temp_dir) / "public"
+        self.public_dir.mkdir()
 
     def tearDown(self):
         """Clean up temporary directory."""
@@ -64,32 +67,51 @@ class TestRunPipeline2(unittest.TestCase):
             })
         visual_timing = {"visuals": visuals}
         (self.run_dir / "visual_timing.json").write_text(json.dumps(visual_timing))
+        (self.run_dir / "narration.mp3").write_bytes(b"fake narration audio")
 
     @patch("run_pipeline2.process_run_directory")
     def test_valid_run_directory_delegates_successfully(self, mock_process):
-        """Test that valid run directory delegates to whiteboard_integration."""
+        """Test that valid run directory delegates to whiteboard_integration and copies assets."""
         self.create_valid_run_dir(3)
 
-        mock_process.return_value = [
-            self.run_dir / "whiteboard" / "scene 1.mp4",
-            self.run_dir / "whiteboard" / "scene 2.mp4",
-            self.run_dir / "whiteboard" / "scene 3.mp4",
+        whiteboard_dir = self.run_dir / "whiteboard"
+        whiteboard_dir.mkdir()
+        output_paths = [
+            whiteboard_dir / "scene 1.mp4",
+            whiteboard_dir / "scene 2.mp4",
+            whiteboard_dir / "scene 3.mp4",
         ]
+        for p in output_paths:
+            p.write_bytes(b"fake video data")
 
-        result = run_pipeline2.main([str(self.run_dir)])
+        mock_process.return_value = output_paths
+
+        result = run_pipeline2.main([str(self.run_dir)], public_dir=self.public_dir)
 
         self.assertEqual(result, 0)
         mock_process.assert_called_once_with(self.run_dir)
+
+        # Verify assets were copied to public directory
+        self.assertTrue((self.public_dir / "scene 1.mp4").exists())
+        self.assertTrue((self.public_dir / "scene 2.mp4").exists())
+        self.assertTrue((self.public_dir / "scene 3.mp4").exists())
+        self.assertTrue((self.public_dir / "narration.mp3").exists())
+        self.assertTrue((self.public_dir / "visual_timing.json").exists())
 
     @patch("run_pipeline2.process_run_directory")
     def test_successful_delegation_prints_output_paths(self, mock_process):
         """Test that successful delegation prints output paths."""
         self.create_valid_run_dir(2)
 
+        whiteboard_dir = self.run_dir / "whiteboard"
+        whiteboard_dir.mkdir()
         output_paths = [
-            self.run_dir / "whiteboard" / "scene 1.mp4",
-            self.run_dir / "whiteboard" / "scene 2.mp4",
+            whiteboard_dir / "scene 1.mp4",
+            whiteboard_dir / "scene 2.mp4",
         ]
+        for p in output_paths:
+            p.write_bytes(b"fake video data")
+
         mock_process.return_value = output_paths
 
         # Capture stdout
@@ -97,15 +119,16 @@ class TestRunPipeline2(unittest.TestCase):
         old_stdout = sys.stdout
         sys.stdout = captured = StringIO()
         try:
-            result = run_pipeline2.main([str(self.run_dir)])
+            result = run_pipeline2.main([str(self.run_dir)], public_dir=self.public_dir)
         finally:
             sys.stdout = old_stdout
 
         self.assertEqual(result, 0)
         output = captured.getvalue()
-        self.assertIn("Pipeline 2 completed successfully", output)
+        self.assertIn("Pipeline 2 animation completed successfully", output)
         self.assertIn("scene 1.mp4", output)
         self.assertIn("scene 2.mp4", output)
+        self.assertIn("Asset preparation complete", output)
 
     def test_missing_run_directory(self):
         """Test error when run directory doesn't exist."""
@@ -114,11 +137,9 @@ class TestRunPipeline2(unittest.TestCase):
         result = run_pipeline2.main([str(missing_dir)])
 
         self.assertEqual(result, 1)
-        # Check stderr was printed (we can't easily capture it in this test setup)
 
     def test_run_path_is_not_a_directory(self):
         """Test error when run path is a file, not a directory."""
-        # Create a file instead of directory
         file_path = self.run_dir / "not_a_dir.txt"
         file_path.write_text("not a directory")
 
@@ -138,7 +159,7 @@ class TestRunPipeline2(unittest.TestCase):
         old_stderr = sys.stderr
         sys.stderr = captured = StringIO()
         try:
-            result = run_pipeline2.main([str(self.run_dir)])
+            result = run_pipeline2.main([str(self.run_dir)], public_dir=self.public_dir)
         finally:
             sys.stderr = old_stderr
 
@@ -158,7 +179,7 @@ class TestRunPipeline2(unittest.TestCase):
         old_stderr = sys.stderr
         sys.stderr = captured = StringIO()
         try:
-            result = run_pipeline2.main([str(self.run_dir)])
+            result = run_pipeline2.main([str(self.run_dir)], public_dir=self.public_dir)
         finally:
             sys.stderr = old_stderr
 
@@ -234,9 +255,8 @@ class TestRunPipeline2CLI(unittest.TestCase):
         self.create_valid_run_dir(2)
 
         def mock_process_side_effect(run_dir):
-            # Create the output files
             whiteboard_dir = run_dir / "whiteboard"
-            whiteboard_dir.mkdir()
+            whiteboard_dir.mkdir(parents=True, exist_ok=True)
             (whiteboard_dir / "scene 1.mp4").write_bytes(b"fake mp4")
             (whiteboard_dir / "scene 2.mp4").write_bytes(b"fake mp4")
             return [
@@ -253,9 +273,10 @@ class TestRunPipeline2CLI(unittest.TestCase):
             cwd=Path(__file__).parent,
         )
         self.assertEqual(result.returncode, 0)
-        self.assertIn("Pipeline 2 completed successfully", result.stdout)
+        self.assertIn("Pipeline 2 animation completed successfully", result.stdout)
         self.assertIn("scene 1.mp4", result.stdout)
         self.assertIn("scene 2.mp4", result.stdout)
+        self.assertIn("Asset preparation complete", result.stdout)
 
     def test_cli_invalid_usage(self):
         """Test CLI with invalid usage returns error."""

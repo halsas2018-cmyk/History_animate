@@ -6,7 +6,10 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@remotion/captions": "^4.0.534",
     "@remotion/cli": "4.0.534",
+    "@remotion/media": "^4.0.534",
+    "@remotion/transitions": "^4.0.534",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "^4.0.534",
@@ -25,7 +28,6 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc",
-    "prepare-assets": "tsx scripts/prepare-assets.ts"
+    "lint": "eslint src && tsc"
   }
 }
