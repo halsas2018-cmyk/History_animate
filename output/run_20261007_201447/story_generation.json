@@ -1,0 +1,21 @@
+{
+  "stage": "story_generation",
+  "data": {
+    "title": "The Great Pyramid of Giza",
+    "sentences": [
+      "Standing as the only largely intact Wonder of the Ancient World, the Great Pyramid remains a testament to human ingenuity.",
+      "Commissioned by Pharaoh Khufu during the 4th Dynasty, this monumental tomb rose on the Giza Plateau around 2580 BCE.",
+      "Under the direction of architect Hemiunu, workers labored for over two decades to assemble 2.3 million limestone blocks.",
+      "Contrary to myths of slave labor, evidence reveals a skilled, paid workforce of up to 30,000 men organized into disciplined gangs.",
+      "These laborers utilized copper chisels and stone pounders to extract massive materials, including granite transported 800 kilometers from Aswan.",
+      "To reach heights of over 146 meters, engineers likely employed complex ramp systems and wooden levers.",
+      "Precision was paramount, as the structure is aligned to true north with remarkable stellar accuracy.",
+      "Internal features like the Grand Gallery and relieving chambers showcase sophisticated structural engineering.",
+      "For 3,800 years, this limestone marvel stood as the tallest man-made structure on Earth."
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite",
+    "length_mode": "short"
+  }
+}

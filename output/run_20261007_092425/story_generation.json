@@ -1,0 +1,22 @@
+{
+  "stage": "story_generation",
+  "data": {
+    "title": "The Collapse of Western Rome",
+    "sentences": [
+      "The collapse of the Western Roman Empire was not a single event, but a century-long disintegration.",
+      "Decades of civil war and economic decay left the state vulnerable to external pressures.",
+      "When the Huns surged into Europe, they pushed displaced Germanic tribes directly into Roman territories.",
+      "The 378 Battle of Adrianople signaled a turning point, as Rome lost its ability to contain these migrating groups.",
+      "By 406, the Rhine frontier was breached, and by 410, Rome itself was looted by Visigoths.",
+      "Internal stability crumbled as the military became reliant on foreign mercenaries with shifting loyalties.",
+      "The loss of North Africa to the Vandals stripped the empire of its vital grain supply and tax revenue.",
+      "Political power devolved into a cycle of puppet emperors controlled by military commanders.",
+      "Finally, in 476, the chieftain Odoacer deposed Romulus Augustulus and refused to name a successor.",
+      "This act ended the Western line, leaving the East to survive for another millennium."
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite",
+    "length_mode": "short"
+  }
+}

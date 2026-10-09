@@ -2,6 +2,11 @@ name: Render Remotion Video
 
 on:
   workflow_dispatch:
+    inputs:
+      run_directory:
+        description: 'Path to the run directory containing Pipeline 2 output (e.g., output/run_20261009_072307)'
+        required: true
+        type: string
 
 jobs:
   render:
@@ -9,11 +14,53 @@ jobs:
 
     defaults:
       run:
-        working-directory: my-video
+        working-directory: dynamic_history_video_project
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Validate run directory input
+        run: |
+          RUN_DIRECTORY="${{ github.event.inputs.run_directory }}"
+          echo "Checking run directory: $RUN_DIRECTORY"
+          if [ ! -d "$RUN_DIRECTORY" ]; then
+            echo "Error: Directory '$RUN_DIRECTORY' does not exist."
+            exit 1
+          fi
+          # Check for required Pipeline 2 files
+          REQUIRED_FILES=("story_generation.json" "sentence_timing.json" "visual_planning.json" "visual_timing.json" "asset_preparation.json" "narration.mp3")
+          for file in "${REQUIRED_FILES[@]}"; do
+            if [ ! -f "$RUN_DIRECTORY/$file" ]; then
+              echo "Error: Required file '$file' not found in '$RUN_DIRECTORY'."
+              exit 1
+            fi
+          done
+          echo "Run directory validation passed."
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Pipeline 2
+        run: |
+          python3 run_pipeline2.py "${{ github.event.inputs.run_directory }}"
+
+      - name: Copy whiteboard scenes to Remotion public directory
+        run: |
+          mkdir -p my-video/public
+          cp -v "$RUN_DIRECTORY"/whiteboard/scene\ *.mp4 my-video/public/ 2>/dev/null || echo "No scene files found to copy (this may be OK if scenes are generated elsewhere)"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -22,14 +69,23 @@ jobs:
           cache: npm
           cache-dependency-path: my-video/package-lock.json
 
-      - name: Install dependencies
+      - name: Install Remotion dependencies
         run: npm ci
+        working-directory: my-video
 
-      - name: Render video
+      - name: Render video with Remotion
         run: npx remotion render MyComp out.mp4
+        working-directory: my-video
 
       - name: Upload rendered video
         uses: actions/upload-artifact@v4
         with:
           name: remotion-video
           path: my-video/out.mp4
+
+      - name: Upload whiteboard scenes
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: whiteboard-scenes
+          path: my-video/public/scene\ *.mp4

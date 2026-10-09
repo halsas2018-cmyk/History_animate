@@ -12,8 +12,9 @@ venv/
 .env.*
 !.env.example
 
-# Pipeline-generated runs
-output/
+# Pipeline-generated runs (allow specific run directories for Pipeline 2)
+output/*
+!output/run_*/
 pipeline_runs/
 scenes/
 

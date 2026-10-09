@@ -1,0 +1,54 @@
+{
+  "stage": "visual_planning",
+  "data": {
+    "visual_plan": [
+      {
+        "sentence_indices": [
+          0
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a samurai kneeling in front of a simple mirror, meticulously arranging his topknot hairstyle, two katana swords resting on a wooden rack nearby, clean black marker outlines, hand-drawn educational illustration style, minimal flat color accents, clear silhouettes, generous white space."
+      },
+      {
+        "sentence_indices": [
+          1,
+          2
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a samurai sitting at a low desk inside a castle room, holding a brush and writing on a scroll, stacks of grain bags in the background, clean black marker outlines, hand-drawn educational illustration style, simple geometric architecture, large recognizable shapes, no shading."
+      },
+      {
+        "sentence_indices": [
+          3
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a samurai performing a formal deep bow to a seated official, strict posture, clean black marker outlines, hand-drawn educational illustration style, simple lines representing traditional tatami mat floor, focus on the posture of respect, no complex textures."
+      },
+      {
+        "sentence_indices": [
+          4,
+          5
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, split-screen style composition, left side shows a samurai practicing with a wooden sword in a dojo, right side shows the same samurai sitting in meditation with a book of Confucian classics, clean black marker outlines, simple hand-drawn style, distinct separated visual components."
+      },
+      {
+        "sentence_indices": [
+          6
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a samurai sitting at a small table crafting a simple wooden household item, a small bowl of rice nearby representing his stipend, clean black marker outlines, hand-drawn educational illustration style, large clear silhouettes, minimal detail."
+      },
+      {
+        "sentence_indices": [
+          7
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a samurai walking with a lantern along a simple wooden fence at night, a stylized moon above, clean black marker outlines, hand-drawn educational illustration style, focus on the patrol movement, simple line art."
+      },
+      {
+        "sentence_indices": [
+          8
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a silhouette of a samurai standing in a stoic, upright pose, a symbolic representation of a sword and a book floating near him, clean black marker outlines, hand-drawn educational illustration style, minimalist design, large recognizable shapes."
+      }
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite"
+  }
+}

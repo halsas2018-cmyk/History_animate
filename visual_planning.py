@@ -37,7 +37,7 @@ import llm_client
 # Constants
 # ---------------------------------------------------------------------------
 
-VISUAL_PLAN_MAX_TOKENS = 8192
+VISUAL_PLAN_MAX_TOKENS = 20192
 
 # Default model (Gemini 3.1 Flash Lite)
 DEFAULT_VISUAL_MODEL_KEY = "gemini-31-flash-lite"
@@ -52,7 +52,8 @@ CRITICAL RULES:
 1. GROUPING: Decide dynamically whether consecutive narration sentences should \
    share ONE visual or use SEPARATE visuals. Group sentences that describe the \
    SAME scene, event, location, or continuous action. Split when the narration \
-   shifts to a new location, time period, subject, or visual concept.
+   shifts to a new location, time period, subject, or visual concept.Do not merge\
+   morethan 2 sentences togather.
 2. COVERAGE: Every sentence must be covered EXACTLY ONCE. The sentence_indices \
    across all visuals must partition the full range [0, N-1] in order.
 3. PROMPT CONTENT: Each image_prompt MUST explicitly include:

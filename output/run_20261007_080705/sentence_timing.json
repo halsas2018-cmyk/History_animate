@@ -1,0 +1,83 @@
+{
+  "stage": "sentence_timing",
+  "data": {
+    "sentence_timing": [
+      {
+        "sentence_index": 0,
+        "text": "The Berlin Wall stood for twenty-eight years as the physical embodiment of the Iron Curtain.",
+        "startFrame": 4,
+        "endFrame": 124,
+        "durationInFrames": 120
+      },
+      {
+        "sentence_index": 1,
+        "text": "By 1989, mounting civil unrest across East Germany reached a breaking point.",
+        "startFrame": 134,
+        "endFrame": 260,
+        "durationInFrames": 126
+      },
+      {
+        "sentence_index": 2,
+        "text": "On November 9, government official Günter Schabowski mistakenly announced that travel restrictions were lifted immediately.",
+        "startFrame": 273,
+        "endFrame": 446,
+        "durationInFrames": 173
+      },
+      {
+        "sentence_index": 3,
+        "text": "Thousands of East Berliners surged toward the border crossings, overwhelming the guards.",
+        "startFrame": 458,
+        "endFrame": 581,
+        "durationInFrames": 123
+      },
+      {
+        "sentence_index": 4,
+        "text": "Without orders to use force, the overwhelmed soldiers eventually opened the gates.",
+        "startFrame": 595,
+        "endFrame": 706,
+        "durationInFrames": 111
+      },
+      {
+        "sentence_index": 5,
+        "text": "Citizens from both sides climbed the concrete barrier, celebrating with hammers and chisels.",
+        "startFrame": 722,
+        "endFrame": 844,
+        "durationInFrames": 122
+      },
+      {
+        "sentence_index": 6,
+        "text": "The collapse of the wall signaled the symbolic end of the Cold War.",
+        "startFrame": 857,
+        "endFrame": 941,
+        "durationInFrames": 84
+      },
+      {
+        "sentence_index": 7,
+        "text": "Within one year, the division between East and West Germany was officially dismantled.",
+        "startFrame": 953,
+        "endFrame": 1075,
+        "durationInFrames": 122
+      },
+      {
+        "sentence_index": 8,
+        "text": "The reunification of the country followed in October 1990.",
+        "startFrame": 1087,
+        "endFrame": 1169,
+        "durationInFrames": 82
+      },
+      {
+        "sentence_index": 9,
+        "text": "This historic event reshaped the geopolitical landscape of Europe forever.",
+        "startFrame": 1175,
+        "endFrame": 1304,
+        "durationInFrames": 129
+      }
+    ],
+    "audio_path": "narration.mp3",
+    "duration": 43.776
+  },
+  "meta": {
+    "sentence_count": 10,
+    "word_count": 124
+  }
+}

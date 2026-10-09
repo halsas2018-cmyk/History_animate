@@ -1,0 +1,1149 @@
+{
+  "stage": "whisperx_timing",
+  "data": {
+    "audio_path": "narration.mp3",
+    "duration": 48.816,
+    "words": [
+      {
+        "index": 0,
+        "word": "Before",
+        "start": 0.131,
+        "end": 0.371
+      },
+      {
+        "index": 1,
+        "word": "dawn,",
+        "start": 0.412,
+        "end": 0.732
+      },
+      {
+        "index": 2,
+        "word": "the",
+        "start": 0.992,
+        "end": 1.092
+      },
+      {
+        "index": 3,
+        "word": "Samurai's",
+        "start": 1.152,
+        "end": 1.633
+      },
+      {
+        "index": 4,
+        "word": "life",
+        "start": 1.673,
+        "end": 1.893
+      },
+      {
+        "index": 5,
+        "word": "began",
+        "start": 1.934,
+        "end": 2.274
+      },
+      {
+        "index": 6,
+        "word": "with",
+        "start": 2.314,
+        "end": 2.434
+      },
+      {
+        "index": 7,
+        "word": "the",
+        "start": 2.454,
+        "end": 2.514
+      },
+      {
+        "index": 8,
+        "word": "meticulous",
+        "start": 2.534,
+        "end": 3.075
+      },
+      {
+        "index": 9,
+        "word": "grooming",
+        "start": 3.115,
+        "end": 3.456
+      },
+      {
+        "index": 10,
+        "word": "of",
+        "start": 3.476,
+        "end": 3.516
+      },
+      {
+        "index": 11,
+        "word": "his",
+        "start": 3.556,
+        "end": 3.656
+      },
+      {
+        "index": 12,
+        "word": "top",
+        "start": 3.696,
+        "end": 3.916
+      },
+      {
+        "index": 13,
+        "word": "knot",
+        "start": 3.936,
+        "end": 4.156
+      },
+      {
+        "index": 14,
+        "word": "and",
+        "start": 4.357,
+        "end": 4.437
+      },
+      {
+        "index": 15,
+        "word": "the",
+        "start": 4.457,
+        "end": 4.537
+      },
+      {
+        "index": 16,
+        "word": "careful",
+        "start": 4.577,
+        "end": 4.917
+      },
+      {
+        "index": 17,
+        "word": "fastening",
+        "start": 4.978,
+        "end": 5.398
+      },
+      {
+        "index": 18,
+        "word": "of",
+        "start": 5.438,
+        "end": 5.478
+      },
+      {
+        "index": 19,
+        "word": "his",
+        "start": 5.518,
+        "end": 5.598
+      },
+      {
+        "index": 20,
+        "word": "two",
+        "start": 5.658,
+        "end": 5.819
+      },
+      {
+        "index": 21,
+        "word": "swords.",
+        "start": 5.879,
+        "end": 6.199
+      },
+      {
+        "index": 22,
+        "word": "Though",
+        "start": 6.66,
+        "end": 6.78
+      },
+      {
+        "index": 23,
+        "word": "he",
+        "start": 6.82,
+        "end": 6.88
+      },
+      {
+        "index": 24,
+        "word": "belonged",
+        "start": 6.9,
+        "end": 7.261
+      },
+      {
+        "index": 25,
+        "word": "to",
+        "start": 7.281,
+        "end": 7.341
+      },
+      {
+        "index": 26,
+        "word": "the",
+        "start": 7.381,
+        "end": 7.441
+      },
+      {
+        "index": 27,
+        "word": "elite",
+        "start": 7.501,
+        "end": 7.721
+      },
+      {
+        "index": 28,
+        "word": "class,",
+        "start": 7.761,
+        "end": 8.082
+      },
+      {
+        "index": 29,
+        "word": "his",
+        "start": 8.342,
+        "end": 8.442
+      },
+      {
+        "index": 30,
+        "word": "role",
+        "start": 8.482,
+        "end": 8.682
+      },
+      {
+        "index": 31,
+        "word": "had",
+        "start": 8.702,
+        "end": 8.803
+      },
+      {
+        "index": 32,
+        "word": "shifted",
+        "start": 8.883,
+        "end": 9.183
+      },
+      {
+        "index": 33,
+        "word": "from",
+        "start": 9.203,
+        "end": 9.343
+      },
+      {
+        "index": 34,
+        "word": "battlefield",
+        "start": 9.403,
+        "end": 9.884
+      },
+      {
+        "index": 35,
+        "word": "warrior",
+        "start": 9.924,
+        "end": 10.285
+      },
+      {
+        "index": 36,
+        "word": "to",
+        "start": 10.325,
+        "end": 10.405
+      },
+      {
+        "index": 37,
+        "word": "civil",
+        "start": 10.445,
+        "end": 10.665
+      },
+      {
+        "index": 38,
+        "word": "administrator.",
+        "start": 10.705,
+        "end": 11.226
+      },
+      {
+        "index": 39,
+        "word": "His",
+        "start": 11.626,
+        "end": 11.726
+      },
+      {
+        "index": 40,
+        "word": "morning",
+        "start": 11.767,
+        "end": 11.987
+      },
+      {
+        "index": 41,
+        "word": "was",
+        "start": 12.027,
+        "end": 12.127
+      },
+      {
+        "index": 42,
+        "word": "spent",
+        "start": 12.147,
+        "end": 12.367
+      },
+      {
+        "index": 43,
+        "word": "managing",
+        "start": 12.447,
+        "end": 12.808
+      },
+      {
+        "index": 44,
+        "word": "tax",
+        "start": 12.848,
+        "end": 13.148
+      },
+      {
+        "index": 45,
+        "word": "records",
+        "start": 13.208,
+        "end": 13.489
+      },
+      {
+        "index": 46,
+        "word": "and",
+        "start": 13.529,
+        "end": 13.609
+      },
+      {
+        "index": 47,
+        "word": "grain",
+        "start": 13.649,
+        "end": 13.929
+      },
+      {
+        "index": 48,
+        "word": "stores",
+        "start": 13.949,
+        "end": 14.25
+      },
+      {
+        "index": 49,
+        "word": "within",
+        "start": 14.29,
+        "end": 14.53
+      },
+      {
+        "index": 50,
+        "word": "the",
+        "start": 14.55,
+        "end": 14.61
+      },
+      {
+        "index": 51,
+        "word": "Lord's",
+        "start": 14.67,
+        "end": 14.891
+      },
+      {
+        "index": 52,
+        "word": "Castle",
+        "start": 14.931,
+        "end": 15.271
+      },
+      {
+        "index": 53,
+        "word": "walls.",
+        "start": 15.291,
+        "end": 15.552
+      },
+      {
+        "index": 54,
+        "word": "Strict",
+        "start": 16.052,
+        "end": 16.333
+      },
+      {
+        "index": 55,
+        "word": "etiquette",
+        "start": 16.453,
+        "end": 16.773
+      },
+      {
+        "index": 56,
+        "word": "governed",
+        "start": 16.833,
+        "end": 17.134
+      },
+      {
+        "index": 57,
+        "word": "every",
+        "start": 17.314,
+        "end": 17.514
+      },
+      {
+        "index": 58,
+        "word": "movement.",
+        "start": 17.574,
+        "end": 17.915
+      },
+      {
+        "index": 59,
+        "word": "as",
+        "start": 18.235,
+        "end": 18.315
+      },
+      {
+        "index": 60,
+        "word": "any",
+        "start": 18.395,
+        "end": 18.535
+      },
+      {
+        "index": 61,
+        "word": "failure",
+        "start": 18.615,
+        "end": 18.935
+      },
+      {
+        "index": 62,
+        "word": "to",
+        "start": 18.955,
+        "end": 19.015
+      },
+      {
+        "index": 63,
+        "word": "show",
+        "start": 19.075,
+        "end": 19.235
+      },
+      {
+        "index": 64,
+        "word": "proper",
+        "start": 19.295,
+        "end": 19.575
+      },
+      {
+        "index": 65,
+        "word": "respect",
+        "start": 19.615,
+        "end": 19.976
+      },
+      {
+        "index": 66,
+        "word": "could",
+        "start": 20.136,
+        "end": 20.296
+      },
+      {
+        "index": 67,
+        "word": "lead",
+        "start": 20.376,
+        "end": 20.596
+      },
+      {
+        "index": 68,
+        "word": "to",
+        "start": 20.636,
+        "end": 20.716
+      },
+      {
+        "index": 69,
+        "word": "disgrace.",
+        "start": 20.736,
+        "end": 21.196
+      },
+      {
+        "index": 70,
+        "word": "By",
+        "start": 21.636,
+        "end": 21.776
+      },
+      {
+        "index": 71,
+        "word": "afternoon,",
+        "start": 21.836,
+        "end": 22.256
+      },
+      {
+        "index": 72,
+        "word": "he",
+        "start": 22.596,
+        "end": 22.676
+      },
+      {
+        "index": 73,
+        "word": "practiced",
+        "start": 22.736,
+        "end": 23.096
+      },
+      {
+        "index": 74,
+        "word": "the",
+        "start": 23.116,
+        "end": 23.197
+      },
+      {
+        "index": 75,
+        "word": "dual",
+        "start": 23.237,
+        "end": 23.457
+      },
+      {
+        "index": 76,
+        "word": "path",
+        "start": 23.497,
+        "end": 23.797
+      },
+      {
+        "index": 77,
+        "word": "of",
+        "start": 23.837,
+        "end": 23.877
+      },
+      {
+        "index": 78,
+        "word": "the",
+        "start": 23.917,
+        "end": 23.977
+      },
+      {
+        "index": 79,
+        "word": "pen",
+        "start": 24.037,
+        "end": 24.297
+      },
+      {
+        "index": 80,
+        "word": "and",
+        "start": 24.457,
+        "end": 24.537
+      },
+      {
+        "index": 81,
+        "word": "the",
+        "start": 24.557,
+        "end": 24.617
+      },
+      {
+        "index": 82,
+        "word": "sword.",
+        "start": 24.677,
+        "end": 24.957
+      },
+      {
+        "index": 83,
+        "word": "He",
+        "start": 25.317,
+        "end": 25.397
+      },
+      {
+        "index": 84,
+        "word": "honed",
+        "start": 25.417,
+        "end": 25.577
+      },
+      {
+        "index": 85,
+        "word": "his",
+        "start": 25.617,
+        "end": 25.697
+      },
+      {
+        "index": 86,
+        "word": "combat",
+        "start": 25.757,
+        "end": 26.157
+      },
+      {
+        "index": 87,
+        "word": "skills",
+        "start": 26.177,
+        "end": 26.437
+      },
+      {
+        "index": 88,
+        "word": "in",
+        "start": 26.478,
+        "end": 26.538
+      },
+      {
+        "index": 89,
+        "word": "the",
+        "start": 26.558,
+        "end": 26.618
+      },
+      {
+        "index": 90,
+        "word": "Dojo",
+        "start": 26.658,
+        "end": 27.018
+      },
+      {
+        "index": 91,
+        "word": "before",
+        "start": 27.058,
+        "end": 27.378
+      },
+      {
+        "index": 92,
+        "word": "turning",
+        "start": 27.438,
+        "end": 27.718
+      },
+      {
+        "index": 93,
+        "word": "to",
+        "start": 27.758,
+        "end": 27.838
+      },
+      {
+        "index": 94,
+        "word": "Confucian",
+        "start": 27.878,
+        "end": 28.298
+      },
+      {
+        "index": 95,
+        "word": "classics",
+        "start": 28.338,
+        "end": 28.758
+      },
+      {
+        "index": 96,
+        "word": "or",
+        "start": 28.998,
+        "end": 29.058
+      },
+      {
+        "index": 97,
+        "word": "the",
+        "start": 29.098,
+        "end": 29.158
+      },
+      {
+        "index": 98,
+        "word": "quiet",
+        "start": 29.198,
+        "end": 29.478
+      },
+      {
+        "index": 99,
+        "word": "discipline",
+        "start": 29.538,
+        "end": 29.939
+      },
+      {
+        "index": 100,
+        "word": "of",
+        "start": 30.099,
+        "end": 30.159
+      },
+      {
+        "index": 101,
+        "word": "meditation.",
+        "start": 30.219,
+        "end": 30.719
+      },
+      {
+        "index": 102,
+        "word": "Despite",
+        "start": 31.079,
+        "end": 31.419
+      },
+      {
+        "index": 103,
+        "word": "his",
+        "start": 31.459,
+        "end": 31.539
+      },
+      {
+        "index": 104,
+        "word": "high",
+        "start": 31.559,
+        "end": 31.699
+      },
+      {
+        "index": 105,
+        "word": "status,",
+        "start": 31.739,
+        "end": 32.099
+      },
+      {
+        "index": 106,
+        "word": "many",
+        "start": 32.439,
+        "end": 32.619
+      },
+      {
+        "index": 107,
+        "word": "samurai",
+        "start": 32.679,
+        "end": 33.12
+      },
+      {
+        "index": 108,
+        "word": "faced",
+        "start": 33.18,
+        "end": 33.44
+      },
+      {
+        "index": 109,
+        "word": "economic",
+        "start": 33.54,
+        "end": 33.9
+      },
+      {
+        "index": 110,
+        "word": "hardship,",
+        "start": 33.92,
+        "end": 34.28
+      },
+      {
+        "index": 111,
+        "word": "sometimes",
+        "start": 34.58,
+        "end": 34.94
+      },
+      {
+        "index": 112,
+        "word": "crafting",
+        "start": 34.98,
+        "end": 35.34
+      },
+      {
+        "index": 113,
+        "word": "household",
+        "start": 35.4,
+        "end": 35.76
+      },
+      {
+        "index": 114,
+        "word": "goods",
+        "start": 35.8,
+        "end": 36.0
+      },
+      {
+        "index": 115,
+        "word": "to",
+        "start": 36.02,
+        "end": 36.12
+      },
+      {
+        "index": 116,
+        "word": "supplement",
+        "start": 36.16,
+        "end": 36.561
+      },
+      {
+        "index": 117,
+        "word": "their",
+        "start": 36.581,
+        "end": 36.721
+      },
+      {
+        "index": 118,
+        "word": "fixed",
+        "start": 36.821,
+        "end": 37.041
+      },
+      {
+        "index": 119,
+        "word": "rice",
+        "start": 37.101,
+        "end": 37.301
+      },
+      {
+        "index": 120,
+        "word": "stipends.",
+        "start": 37.321,
+        "end": 37.741
+      },
+      {
+        "index": 121,
+        "word": "Evenings",
+        "start": 38.261,
+        "end": 38.522
+      },
+      {
+        "index": 122,
+        "word": "were",
+        "start": 38.562,
+        "end": 38.683
+      },
+      {
+        "index": 123,
+        "word": "reserved",
+        "start": 38.703,
+        "end": 39.084
+      },
+      {
+        "index": 124,
+        "word": "for",
+        "start": 39.124,
+        "end": 39.244
+      },
+      {
+        "index": 125,
+        "word": "rigid",
+        "start": 39.365,
+        "end": 39.626
+      },
+      {
+        "index": 126,
+        "word": "social",
+        "start": 39.706,
+        "end": 39.987
+      },
+      {
+        "index": 127,
+        "word": "obligations",
+        "start": 40.047,
+        "end": 40.568
+      },
+      {
+        "index": 128,
+        "word": "and",
+        "start": 40.869,
+        "end": 40.949
+      },
+      {
+        "index": 129,
+        "word": "the",
+        "start": 40.97,
+        "end": 41.03
+      },
+      {
+        "index": 130,
+        "word": "security",
+        "start": 41.07,
+        "end": 41.471
+      },
+      {
+        "index": 131,
+        "word": "patrols",
+        "start": 41.511,
+        "end": 41.892
+      },
+      {
+        "index": 132,
+        "word": "that",
+        "start": 42.033,
+        "end": 42.153
+      },
+      {
+        "index": 133,
+        "word": "kept",
+        "start": 42.193,
+        "end": 42.374
+      },
+      {
+        "index": 134,
+        "word": "his",
+        "start": 42.414,
+        "end": 42.514
+      },
+      {
+        "index": 135,
+        "word": "district",
+        "start": 42.554,
+        "end": 42.895
+      },
+      {
+        "index": 136,
+        "word": "safe.",
+        "start": 42.955,
+        "end": 43.176
+      },
+      {
+        "index": 137,
+        "word": "Guided",
+        "start": 43.617,
+        "end": 43.858
+      },
+      {
+        "index": 138,
+        "word": "by",
+        "start": 43.898,
+        "end": 43.999
+      },
+      {
+        "index": 139,
+        "word": "the",
+        "start": 44.019,
+        "end": 44.079
+      },
+      {
+        "index": 140,
+        "word": "Code",
+        "start": 44.119,
+        "end": 44.34
+      },
+      {
+        "index": 141,
+        "word": "of",
+        "start": 44.36,
+        "end": 44.42
+      },
+      {
+        "index": 142,
+        "word": "Bushido,",
+        "start": 44.44,
+        "end": 44.881
+      },
+      {
+        "index": 143,
+        "word": "he",
+        "start": 45.102,
+        "end": 45.182
+      },
+      {
+        "index": 144,
+        "word": "lived",
+        "start": 45.222,
+        "end": 45.403
+      },
+      {
+        "index": 145,
+        "word": "a",
+        "start": 45.443,
+        "end": 45.483
+      },
+      {
+        "index": 146,
+        "word": "life",
+        "start": 45.543,
+        "end": 45.764
+      },
+      {
+        "index": 147,
+        "word": "of",
+        "start": 45.824,
+        "end": 45.884
+      },
+      {
+        "index": 148,
+        "word": "stoicism,",
+        "start": 45.964,
+        "end": 46.546
+      },
+      {
+        "index": 149,
+        "word": "loyalty,",
+        "start": 46.847,
+        "end": 47.248
+      },
+      {
+        "index": 150,
+        "word": "and",
+        "start": 47.529,
+        "end": 47.609
+      },
+      {
+        "index": 151,
+        "word": "constant",
+        "start": 47.649,
+        "end": 48.011
+      },
+      {
+        "index": 152,
+        "word": "preparation.",
+        "start": 48.051,
+        "end": 48.532
+      }
+    ],
+    "sentences": [
+      {
+        "sentence_index": 0,
+        "start": 0.131,
+        "end": 6.199,
+        "word_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      {
+        "sentence_index": 1,
+        "start": 6.66,
+        "end": 11.226,
+        "word_indices": [
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38
+        ]
+      },
+      {
+        "sentence_index": 2,
+        "start": 11.626,
+        "end": 15.552,
+        "word_indices": [
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53
+        ]
+      },
+      {
+        "sentence_index": 3,
+        "start": 16.052,
+        "end": 21.196,
+        "word_indices": [
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69
+        ]
+      },
+      {
+        "sentence_index": 4,
+        "start": 21.636,
+        "end": 24.957,
+        "word_indices": [
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82
+        ]
+      },
+      {
+        "sentence_index": 5,
+        "start": 25.317,
+        "end": 30.719,
+        "word_indices": [
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ]
+      },
+      {
+        "sentence_index": 6,
+        "start": 31.079,
+        "end": 37.741,
+        "word_indices": [
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120
+        ]
+      },
+      {
+        "sentence_index": 7,
+        "start": 38.261,
+        "end": 43.176,
+        "word_indices": [
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136
+        ]
+      },
+      {
+        "sentence_index": 8,
+        "start": 43.617,
+        "end": 48.532,
+        "word_indices": [
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "word_count": 153,
+    "sentence_count": 9
+  }
+}

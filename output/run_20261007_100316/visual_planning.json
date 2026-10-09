@@ -1,0 +1,36 @@
+{
+  "stage": "visual_planning",
+  "data": {
+    "visual_plan": [
+      {
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a stylized Roman map of the empire in 235-260 CE, faded road network, central figure of Maximinus Thrax in a battle stance wearing 3rd century legionary armor, banners of civil war with Roman and barbarian troops, Sassanid Persian army approaching with Persian cavalry, Valerian captured in chains on a Roman column, bronze and red color palette, timeline arrows indicating 235 CE, 260 CE, subtle erosion effect on empire borders, period-accurate clothing, helmets, chariots, and Roman architectural ruins."
+      },
+      {
+        "sentence_indices": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, grand Roman administrative building with Diocletian's Tetrarchy symbol of four pillars, ledgers depicting tax reforms, reorganized army with banners of the four emperors, a dividing line across the building illustrating the split into East and West in 285 CE, Diocletian in imperial regalia abdicated with a scroll, Constantine in 312 CE triumphal arch with Christian cross, Milvian Bridge scene with Constantine's victory, founding of Constantinople depicted by a new city skyline with a golden dome, period-accurate clothing, architecture, chariots, soldiers, and Christian symbols."
+      },
+      {
+        "sentence_indices": [
+          9,
+          10
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, Roman legionary helmet with broken Roman eagle, Odoacer's Germanic chieftain in leather armor, Romulus Augustulus in simple toga, a map showing the fall of the Western Empire in 476 CE, Eastern Empire's city of Constantinople with a golden dome and Byzantine architecture, timeline arrow to 1453 CE, period-accurate clothing, architecture, and contrasting Western and Eastern Roman elements."
+      }
+    ]
+  },
+  "meta": {
+    "model_key": "groq-gpt-oss-20b"
+  }
+}

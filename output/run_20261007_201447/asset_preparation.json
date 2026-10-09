@@ -1,0 +1,27 @@
+{
+  "stage": "asset_preparation",
+  "data": {
+    "assets_dir": "assets",
+    "visual_count": 5,
+    "scene_files": [
+      "scene 1.png",
+      "scene 2.png",
+      "scene 3.png",
+      "scene 4.png",
+      "scene 5.png"
+    ],
+    "created": [
+      "scene 1.png",
+      "scene 2.png",
+      "scene 3.png",
+      "scene 4.png",
+      "scene 5.png"
+    ],
+    "skipped": []
+  },
+  "meta": {
+    "visual_count": 5,
+    "created_count": 5,
+    "skipped_count": 0
+  }
+}

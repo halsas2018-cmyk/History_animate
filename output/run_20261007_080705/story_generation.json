@@ -1,0 +1,22 @@
+{
+  "stage": "story_generation",
+  "data": {
+    "title": "The Fall of the Berlin Wall",
+    "sentences": [
+      "The Berlin Wall stood for twenty-eight years as the physical embodiment of the Iron Curtain.",
+      "By 1989, mounting civil unrest across East Germany reached a breaking point.",
+      "On November 9, government official Günter Schabowski mistakenly announced that travel restrictions were lifted immediately.",
+      "Thousands of East Berliners surged toward the border crossings, overwhelming the guards.",
+      "Without orders to use force, the overwhelmed soldiers eventually opened the gates.",
+      "Citizens from both sides climbed the concrete barrier, celebrating with hammers and chisels.",
+      "The collapse of the wall signaled the symbolic end of the Cold War.",
+      "Within one year, the division between East and West Germany was officially dismantled.",
+      "The reunification of the country followed in October 1990.",
+      "This historic event reshaped the geopolitical landscape of Europe forever."
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite",
+    "length_mode": "short"
+  }
+}

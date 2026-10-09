@@ -1,0 +1,45 @@
+{
+  "stage": "visual_planning",
+  "data": {
+    "visual_plan": [
+      {
+        "sentence_indices": [
+          0,
+          1
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a crumbling Roman marble forum with cracked columns and overgrown vines, a desolate atmosphere suggesting long-term decay, weathered stone statues, dusty sunlight filtering through ruins, cinematic historical documentary style."
+      },
+      {
+        "sentence_indices": [
+          2,
+          3
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a chaotic battlefield scene during the 4th century, Germanic warriors in furs and chainmail clashing with Roman legionaries in segmented lorica segmentata armor, Huns on horseback in the background, dust and smoke, dynamic motion, historical realism."
+      },
+      {
+        "sentence_indices": [
+          4
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a dramatic depiction of the sack of Rome, Visigoth soldiers carrying torches and loot through the streets of Rome, iconic Roman marble arches in the background engulfed in embers and shadows, intense atmosphere, 410 AD period-accurate attire."
+      },
+      {
+        "sentence_indices": [
+          5,
+          6,
+          7
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a split-focus composition showing a Roman military camp with diverse mercenaries in non-Roman gear, a map of the Mediterranean showing the loss of North Africa, and a shadowy throne room with a weak, ornate-robed puppet emperor being manipulated by a stern general in military regalia."
+      },
+      {
+        "sentence_indices": [
+          8,
+          9
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, the final moment of the Western Roman Empire, the barbarian chieftain Odoacer standing before the young Romulus Augustulus in a dimly lit, opulent imperial palace, Odoacer removing the imperial regalia, a sense of finality, transition to a dark, cold stone floor, high contrast, historical gravitas."
+      }
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "stage": "sentence_timing",
+  "data": {
+    "sentence_timing": [
+      {
+        "sentence_index": 0,
+        "text": "In 79 AD, Mount Vesuvius erupted with a violence that silenced a region and preserved it for eternity.",
+        "startFrame": 5,
+        "endFrame": 181,
+        "durationInFrames": 176
+      },
+      {
+        "sentence_index": 1,
+        "text": "Years of seismic warnings, including a major earthquake in 62 AD, preceded the catastrophe.",
+        "startFrame": 193,
+        "endFrame": 351,
+        "durationInFrames": 158
+      },
+      {
+        "sentence_index": 2,
+        "text": "The eruption began with a massive Plinian column of ash and pumice rising thirty kilometers into the sky.",
+        "startFrame": 362,
+        "endFrame": 519,
+        "durationInFrames": 157
+      },
+      {
+        "sentence_index": 3,
+        "text": "While prevailing winds buried Pompeii under falling lapilli, the city of Herculaneum faced a different fate.",
+        "startFrame": 530,
+        "endFrame": 694,
+        "durationInFrames": 164
+      },
+      {
+        "sentence_index": 4,
+        "text": "During the night, the eruption column collapsed, triggering superheated pyroclastic surges that swept down the mountain.",
+        "startFrame": 705,
+        "endFrame": 876,
+        "durationInFrames": 171
+      },
+      {
+        "sentence_index": 5,
+        "text": "These surges killed inhabitants instantly through thermal shock.",
+        "startFrame": 887,
+        "endFrame": 972,
+        "durationInFrames": 85
+      },
+      {
+        "sentence_index": 6,
+        "text": "Pliny the Elder, commanding the Roman fleet, died attempting a rescue mission at Stabiae.",
+        "startFrame": 989,
+        "endFrame": 1112,
+        "durationInFrames": 123
+      },
+      {
+        "sentence_index": 7,
+        "text": "His nephew, Pliny the Younger, recorded the only surviving eyewitness account of the disaster.",
+        "startFrame": 1123,
+        "endFrame": 1264,
+        "durationInFrames": 141
+      },
+      {
+        "sentence_index": 8,
+        "text": "The rapid burial acted as a time capsule, sealing frescoes, organic matter, and victims in ash.",
+        "startFrame": 1275,
+        "endFrame": 1446,
+        "durationInFrames": 171
+      },
+      {
+        "sentence_index": 9,
+        "text": "In 1863, Giuseppe Fiorelli developed the technique of plaster casting, revealing the tragic final moments of those trapped in the debris.",
+        "startFrame": 1448,
+        "endFrame": 1661,
+        "durationInFrames": 213
+      }
+    ],
+    "audio_path": "narration.mp3",
+    "duration": 55.656
+  },
+  "meta": {
+    "sentence_count": 10,
+    "word_count": 156
+  }
+}

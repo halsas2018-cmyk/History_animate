@@ -1,0 +1,76 @@
+{
+  "stage": "sentence_timing",
+  "data": {
+    "sentence_timing": [
+      {
+        "sentence_index": 0,
+        "text": "Before dawn, the samurai’s life began with the meticulous grooming of his topknot and the careful fastening of his two swords.",
+        "startFrame": 4,
+        "endFrame": 186,
+        "durationInFrames": 182
+      },
+      {
+        "sentence_index": 1,
+        "text": "Though he belonged to the elite class, his role had shifted from battlefield warrior to civil administrator.",
+        "startFrame": 200,
+        "endFrame": 337,
+        "durationInFrames": 137
+      },
+      {
+        "sentence_index": 2,
+        "text": "His morning was spent managing tax records and grain stores within the lord’s castle walls.",
+        "startFrame": 349,
+        "endFrame": 467,
+        "durationInFrames": 118
+      },
+      {
+        "sentence_index": 3,
+        "text": "Strict etiquette governed every movement, as any failure to show proper respect could lead to disgrace.",
+        "startFrame": 482,
+        "endFrame": 636,
+        "durationInFrames": 154
+      },
+      {
+        "sentence_index": 4,
+        "text": "By afternoon, he practiced the dual path of the pen and the sword.",
+        "startFrame": 649,
+        "endFrame": 749,
+        "durationInFrames": 100
+      },
+      {
+        "sentence_index": 5,
+        "text": "He honed his combat skills in the dojo before turning to Confucian classics or the quiet discipline of meditation.",
+        "startFrame": 760,
+        "endFrame": 922,
+        "durationInFrames": 162
+      },
+      {
+        "sentence_index": 6,
+        "text": "Despite his high status, many samurai faced economic hardship, sometimes crafting household goods to supplement their fixed rice stipends.",
+        "startFrame": 932,
+        "endFrame": 1132,
+        "durationInFrames": 200
+      },
+      {
+        "sentence_index": 7,
+        "text": "Evenings were reserved for rigid social obligations and the security patrols that kept his district safe.",
+        "startFrame": 1148,
+        "endFrame": 1295,
+        "durationInFrames": 147
+      },
+      {
+        "sentence_index": 8,
+        "text": "Guided by the code of Bushido, he lived a life of stoicism, loyalty, and constant preparation.",
+        "startFrame": 1309,
+        "endFrame": 1456,
+        "durationInFrames": 147
+      }
+    ],
+    "audio_path": "narration.mp3",
+    "duration": 48.816
+  },
+  "meta": {
+    "sentence_count": 9,
+    "word_count": 153
+  }
+}

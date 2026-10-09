@@ -1,0 +1,76 @@
+{
+  "stage": "sentence_timing",
+  "data": {
+    "sentence_timing": [
+      {
+        "sentence_index": 0,
+        "text": "Standing as the only largely intact Wonder of the Ancient World, the Great Pyramid remains a testament to human ingenuity.",
+        "startFrame": 6,
+        "endFrame": 195,
+        "durationInFrames": 189
+      },
+      {
+        "sentence_index": 1,
+        "text": "Commissioned by Pharaoh Khufu during the 4th Dynasty, this monumental tomb rose on the Giza Plateau around 2580 BCE.",
+        "startFrame": 206,
+        "endFrame": 407,
+        "durationInFrames": 201
+      },
+      {
+        "sentence_index": 2,
+        "text": "Under the direction of architect Hemiunu, workers labored for over two decades to assemble 2.3 million limestone blocks.",
+        "startFrame": 418,
+        "endFrame": 618,
+        "durationInFrames": 200
+      },
+      {
+        "sentence_index": 3,
+        "text": "Contrary to myths of slave labor, evidence reveals a skilled, paid workforce of up to 30,000 men organized into disciplined gangs.",
+        "startFrame": 632,
+        "endFrame": 849,
+        "durationInFrames": 217
+      },
+      {
+        "sentence_index": 4,
+        "text": "These laborers utilized copper chisels and stone pounders to extract massive materials, including granite transported 800 kilometers from Aswan.",
+        "startFrame": 863,
+        "endFrame": 1099,
+        "durationInFrames": 236
+      },
+      {
+        "sentence_index": 5,
+        "text": "To reach heights of over 146 meters, engineers likely employed complex ramp systems and wooden levers.",
+        "startFrame": 1109,
+        "endFrame": 1283,
+        "durationInFrames": 174
+      },
+      {
+        "sentence_index": 6,
+        "text": "Precision was paramount, as the structure is aligned to true north with remarkable stellar accuracy.",
+        "startFrame": 1296,
+        "endFrame": 1440,
+        "durationInFrames": 144
+      },
+      {
+        "sentence_index": 7,
+        "text": "Internal features like the Grand Gallery and relieving chambers showcase sophisticated structural engineering.",
+        "startFrame": 1451,
+        "endFrame": 1608,
+        "durationInFrames": 157
+      },
+      {
+        "sentence_index": 8,
+        "text": "For 3,800 years, this limestone marvel stood as the tallest man-made structure on Earth.",
+        "startFrame": 1619,
+        "endFrame": 1778,
+        "durationInFrames": 159
+      }
+    ],
+    "audio_path": "narration.mp3",
+    "duration": 59.616
+  },
+  "meta": {
+    "sentence_count": 9,
+    "word_count": 155
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "stage": "visual_planning",
+  "data": {
+    "visual_plan": [
+      {
+        "sentence_indices": [
+          0
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a stark, imposing segment of the Berlin Wall made of weathered grey concrete topped with a smooth pipe, barbed wire tangled along the top, cold overcast lighting, minimalist historical documentary style, sharp focus on the graffiti-covered concrete texture."
+      },
+      {
+        "sentence_indices": [
+          1,
+          2
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a dimly lit East German press conference room in 1989, a stern government official Günter Schabowski sitting at a wooden desk with microphones, stacks of papers, a vintage television camera in the foreground, atmosphere of tension and confusion, realistic 1980s aesthetic."
+      },
+      {
+        "sentence_indices": [
+          3,
+          4
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a crowded Berlin border crossing at night, a massive surge of East German citizens pressing against a metal gate, East German border guards in olive-drab uniforms looking overwhelmed and hesitant, floodlights casting long shadows, high-contrast historical photography style."
+      },
+      {
+        "sentence_indices": [
+          5
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a close-up of people standing atop the Berlin Wall, jubilant East and West Berliners embracing, hands holding hammers and chisels striking the concrete, dust and debris flying, iconic scene of triumph, 1989 period-accurate winter clothing."
+      },
+      {
+        "sentence_indices": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a wide-angle aerial view of the Brandenburg Gate in Berlin, large crowds gathered in front of the monument, a sense of unity and celebration, the wall being dismantled by construction equipment in the background, bright daylight, symbolic of a new era, cinematic historical documentary aesthetic."
+      }
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite"
+  }
+}

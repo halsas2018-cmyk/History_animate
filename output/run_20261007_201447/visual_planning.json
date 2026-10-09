@@ -1,0 +1,44 @@
+{
+  "stage": "visual_planning",
+  "data": {
+    "visual_plan": [
+      {
+        "sentence_indices": [
+          0,
+          1
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, a majestic Great Pyramid of Giza standing on the Giza Plateau, Pharaoh Khufu depicted as a simple silhouette standing nearby, clean black marker outlines, minimal flat color accents in gold, large recognizable shapes, no shading or gradients."
+      },
+      {
+        "sentence_indices": [
+          2,
+          3
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, architect Hemiunu holding a papyrus scroll, a group of organized workers lifting a large limestone block, clean black marker outlines, distinct separated visual components, large silhouettes, generous white space, simple connected line art."
+      },
+      {
+        "sentence_indices": [
+          4,
+          5
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, copper chisels and stone pounders, a diagrammatic representation of a wooden ramp system and levers against the side of a pyramid, clean black marker outlines, large recognizable shapes, minimal flat color accents in copper, easy to trace independently."
+      },
+      {
+        "sentence_indices": [
+          6,
+          7
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, a cross-section view of the pyramid interior showing the Grand Gallery and relieving chambers, a compass rose symbol indicating alignment to true north, clean black marker outlines, large recognizable shapes, no complex textures, clear continuous outlines."
+      },
+      {
+        "sentence_indices": [
+          8
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, the Great Pyramid isolated in the center, a timeline graphic below it showing the span of 3,800 years, clean black marker outlines, large recognizable shapes, minimalist design, generous white space."
+      }
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite"
+  }
+}

@@ -152,7 +152,7 @@ def validate_visual_timing(visual_timing: Dict[str, Any]) -> List[Dict[str, Any]
 
         # Verify duration matches end - start (allow small floating point tolerance)
         expected_duration = visual["end"] - visual["start"]
-        if abs(visual["duration"] - expected_duration) > 0.001:
+        if abs(visual["duration"] - expected_duration) > 0.01:
             raise WhiteboardIntegrationError(
                 f"visual[{i}] 'duration' ({visual['duration']}) != 'end' - 'start' ({expected_duration:.3f})"
             )

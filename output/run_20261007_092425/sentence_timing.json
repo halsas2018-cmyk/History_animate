@@ -1,0 +1,83 @@
+{
+  "stage": "sentence_timing",
+  "data": {
+    "sentence_timing": [
+      {
+        "sentence_index": 0,
+        "text": "The collapse of the Western Roman Empire was not a single event, but a century-long disintegration.",
+        "startFrame": 3,
+        "endFrame": 141,
+        "durationInFrames": 138
+      },
+      {
+        "sentence_index": 1,
+        "text": "Decades of civil war and economic decay left the state vulnerable to external pressures.",
+        "startFrame": 153,
+        "endFrame": 288,
+        "durationInFrames": 135
+      },
+      {
+        "sentence_index": 2,
+        "text": "When the Huns surged into Europe, they pushed displaced Germanic tribes directly into Roman territories.",
+        "startFrame": 300,
+        "endFrame": 466,
+        "durationInFrames": 166
+      },
+      {
+        "sentence_index": 3,
+        "text": "The 378 Battle of Adrianople signaled a turning point, as Rome lost its ability to contain these migrating groups.",
+        "startFrame": 467,
+        "endFrame": 650,
+        "durationInFrames": 183
+      },
+      {
+        "sentence_index": 4,
+        "text": "By 406, the Rhine frontier was breached, and by 410, Rome itself was looted by Visigoths.",
+        "startFrame": 664,
+        "endFrame": 835,
+        "durationInFrames": 171
+      },
+      {
+        "sentence_index": 5,
+        "text": "Internal stability crumbled as the military became reliant on foreign mercenaries with shifting loyalties.",
+        "startFrame": 849,
+        "endFrame": 1001,
+        "durationInFrames": 152
+      },
+      {
+        "sentence_index": 6,
+        "text": "The loss of North Africa to the Vandals stripped the empire of its vital grain supply and tax revenue.",
+        "startFrame": 1014,
+        "endFrame": 1166,
+        "durationInFrames": 152
+      },
+      {
+        "sentence_index": 7,
+        "text": "Political power devolved into a cycle of puppet emperors controlled by military commanders.",
+        "startFrame": 1177,
+        "endFrame": 1304,
+        "durationInFrames": 127
+      },
+      {
+        "sentence_index": 8,
+        "text": "Finally, in 476, the chieftain Odoacer deposed Romulus Augustulus and refused to name a successor.",
+        "startFrame": 1319,
+        "endFrame": 1499,
+        "durationInFrames": 180
+      },
+      {
+        "sentence_index": 9,
+        "text": "This act ended the Western line, leaving the East to survive for another millennium.",
+        "startFrame": 1512,
+        "endFrame": 1624,
+        "durationInFrames": 112
+      }
+    ],
+    "audio_path": "narration.mp3",
+    "duration": 54.408
+  },
+  "meta": {
+    "sentence_count": 10,
+    "word_count": 155
+  }
+}

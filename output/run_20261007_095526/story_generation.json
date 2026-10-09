@@ -1,0 +1,20 @@
+{
+  "stage": "story_generation",
+  "data": {
+    "title": "The Collapse of Western Rome",
+    "sentences": [
+      "The collapse of the Western Roman Empire was not a sudden event, but a century-long disintegration triggered by systemic failure.",
+      "Decades of civil war and economic crisis during the third century had already left the imperial infrastructure brittle.",
+      "Diocletian’s decision to divide the empire into East and West created a permanent administrative split, leaving the West increasingly vulnerable.",
+      "The westward expansion of the Huns pushed Germanic tribes toward Roman borders, culminating in the catastrophic Roman defeat at the Battle of Adrianople in 378.",
+      "By 410, the unthinkable occurred when Alaric and the Visigoths sacked the city of Rome for the first time in eight centuries.",
+      "Internal stability crumbled as the military relied on foreign mercenaries, while the loss of North African grain supplies crippled the economy.",
+      "Finally, in 476, the Germanic chieftain Odoacer deposed the teenage emperor Romulus Augustulus.",
+      "By sending the imperial regalia to Constantinople, Odoacer effectively signaled the end of the Western Roman Empire."
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite",
+    "length_mode": "short"
+  }
+}

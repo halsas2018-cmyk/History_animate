@@ -1,0 +1,21 @@
+{
+  "stage": "story_generation",
+  "data": {
+    "title": "Life as an Edo Samurai",
+    "sentences": [
+      "Before dawn, the samurai’s life began with the meticulous grooming of his topknot and the careful fastening of his two swords.",
+      "Though he belonged to the elite class, his role had shifted from battlefield warrior to civil administrator.",
+      "His morning was spent managing tax records and grain stores within the lord’s castle walls.",
+      "Strict etiquette governed every movement, as any failure to show proper respect could lead to disgrace.",
+      "By afternoon, he practiced the dual path of the pen and the sword.",
+      "He honed his combat skills in the dojo before turning to Confucian classics or the quiet discipline of meditation.",
+      "Despite his high status, many samurai faced economic hardship, sometimes crafting household goods to supplement their fixed rice stipends.",
+      "Evenings were reserved for rigid social obligations and the security patrols that kept his district safe.",
+      "Guided by the code of Bushido, he lived a life of stoicism, loyalty, and constant preparation."
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite",
+    "length_mode": "short"
+  }
+}

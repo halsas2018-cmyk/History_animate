@@ -1,0 +1,90 @@
+{
+  "stage": "sentence_timing",
+  "data": {
+    "sentence_timing": [
+      {
+        "sentence_index": 0,
+        "text": "Rome’s fall was a slow erosion that reshaped Europe.",
+        "startFrame": 12,
+        "endFrame": 78,
+        "durationInFrames": 66
+      },
+      {
+        "sentence_index": 1,
+        "text": "It began in 235 CE when Maximinus Thrax seized power.",
+        "startFrame": 90,
+        "endFrame": 196,
+        "durationInFrames": 106
+      },
+      {
+        "sentence_index": 2,
+        "text": "Civil wars and invasions destabilized the empire until 260 CE.",
+        "startFrame": 209,
+        "endFrame": 332,
+        "durationInFrames": 123
+      },
+      {
+        "sentence_index": 3,
+        "text": "Valerian’s capture by the Sassanids in 260 CE shattered Rome’s prestige.",
+        "startFrame": 344,
+        "endFrame": 472,
+        "durationInFrames": 128
+      },
+      {
+        "sentence_index": 4,
+        "text": "Diocletian introduced the Tetrarchy, reformed taxes, and reorganized the army.",
+        "startFrame": 485,
+        "endFrame": 610,
+        "durationInFrames": 125
+      },
+      {
+        "sentence_index": 5,
+        "text": "In 285 CE he split the empire into East and West.",
+        "startFrame": 622,
+        "endFrame": 719,
+        "durationInFrames": 97
+      },
+      {
+        "sentence_index": 6,
+        "text": "Diocletian abdicated in 305 CE; Constantine became sole ruler.",
+        "startFrame": 731,
+        "endFrame": 870,
+        "durationInFrames": 139
+      },
+      {
+        "sentence_index": 7,
+        "text": "Constantine’s 312 CE victory at Milvian Bridge led to Christian conversion.",
+        "startFrame": 882,
+        "endFrame": 1004,
+        "durationInFrames": 122
+      },
+      {
+        "sentence_index": 8,
+        "text": "He founded Constantinople in 330 CE, shifting power eastward.",
+        "startFrame": 1014,
+        "endFrame": 1125,
+        "durationInFrames": 111
+      },
+      {
+        "sentence_index": 9,
+        "text": "Odoacer deposed Romulus Augustulus in 476 CE, ending the Western Empire.",
+        "startFrame": 1144,
+        "endFrame": 1276,
+        "durationInFrames": 132
+      },
+      {
+        "sentence_index": 10,
+        "text": "The Eastern Roman Empire persisted until 1453 CE, preserving law and culture.",
+        "startFrame": 1287,
+        "endFrame": 1438,
+        "durationInFrames": 151
+      }
+    ],
+    "audio_path": "narration.mp3",
+    "duration": 48.24
+  },
+  "meta": {
+    "sentence_count": 11,
+    "word_count": 114
+  }
+}

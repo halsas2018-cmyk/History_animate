@@ -32,9 +32,9 @@ import llm_client
 ALLOWED_LENGTH_MODES = ("short", "long")
 
 # Generous but not wasteful token budgets.
-_RESEARCH_MAX_TOKENS = 2048   # Research notes (both modes share this)
-_STORY_MAX_TOKENS_SHORT = 4096
-_STORY_MAX_TOKENS_LONG  = 16384
+_RESEARCH_MAX_TOKENS = 10048   # Research notes (both modes share this)
+_STORY_MAX_TOKENS_SHORT = 14096
+_STORY_MAX_TOKENS_LONG  = 28384
 
 # ---------------------------------------------------------------------------
 # Metadata-leakage detection

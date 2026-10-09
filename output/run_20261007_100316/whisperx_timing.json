@@ -1,0 +1,889 @@
+{
+  "stage": "whisperx_timing",
+  "data": {
+    "audio_path": "narration.mp3",
+    "duration": 48.24,
+    "words": [
+      {
+        "index": 0,
+        "word": "Rome's",
+        "start": 0.131,
+        "end": 0.351
+      },
+      {
+        "index": 1,
+        "word": "fall",
+        "start": 0.391,
+        "end": 0.591
+      },
+      {
+        "index": 2,
+        "word": "was",
+        "start": 0.611,
+        "end": 0.731
+      },
+      {
+        "index": 3,
+        "word": "a",
+        "start": 0.771,
+        "end": 0.791
+      },
+      {
+        "index": 4,
+        "word": "slow",
+        "start": 0.851,
+        "end": 1.071
+      },
+      {
+        "index": 5,
+        "word": "erosion",
+        "start": 1.131,
+        "end": 1.512
+      },
+      {
+        "index": 6,
+        "word": "that",
+        "start": 1.692,
+        "end": 1.812
+      },
+      {
+        "index": 7,
+        "word": "reshaped",
+        "start": 1.872,
+        "end": 2.312
+      },
+      {
+        "index": 8,
+        "word": "Europe.",
+        "start": 2.412,
+        "end": 2.612
+      },
+      {
+        "index": 9,
+        "word": "It",
+        "start": 2.992,
+        "end": 3.052
+      },
+      {
+        "index": 10,
+        "word": "began",
+        "start": 3.092,
+        "end": 3.372
+      },
+      {
+        "index": 11,
+        "word": "in",
+        "start": 3.432,
+        "end": 3.492
+      },
+      {
+        "index": 12,
+        "word": "235",
+        "start": 3.552,
+        "end": 4.233
+      },
+      {
+        "index": 13,
+        "word": "CE",
+        "start": 4.273,
+        "end": 4.573
+      },
+      {
+        "index": 14,
+        "word": "when",
+        "start": 4.733,
+        "end": 4.853
+      },
+      {
+        "index": 15,
+        "word": "Maximinus",
+        "start": 4.893,
+        "end": 5.453
+      },
+      {
+        "index": 16,
+        "word": "Thrax",
+        "start": 5.473,
+        "end": 5.833
+      },
+      {
+        "index": 17,
+        "word": "seized",
+        "start": 5.973,
+        "end": 6.213
+      },
+      {
+        "index": 18,
+        "word": "power.",
+        "start": 6.253,
+        "end": 6.533
+      },
+      {
+        "index": 19,
+        "word": "Civil",
+        "start": 6.974,
+        "end": 7.214
+      },
+      {
+        "index": 20,
+        "word": "wars",
+        "start": 7.254,
+        "end": 7.534
+      },
+      {
+        "index": 21,
+        "word": "and",
+        "start": 7.654,
+        "end": 7.734
+      },
+      {
+        "index": 22,
+        "word": "invasions",
+        "start": 7.774,
+        "end": 8.234
+      },
+      {
+        "index": 23,
+        "word": "destabilized",
+        "start": 8.294,
+        "end": 9.054
+      },
+      {
+        "index": 24,
+        "word": "the",
+        "start": 9.074,
+        "end": 9.154
+      },
+      {
+        "index": 25,
+        "word": "Empire",
+        "start": 9.254,
+        "end": 9.595
+      },
+      {
+        "index": 26,
+        "word": "until",
+        "start": 9.735,
+        "end": 9.975
+      },
+      {
+        "index": 27,
+        "word": "260",
+        "start": 10.015,
+        "end": 10.195
+      },
+      {
+        "index": 28,
+        "word": "CE.",
+        "start": 10.235,
+        "end": 11.075
+      },
+      {
+        "index": 29,
+        "word": "Valerians",
+        "start": 11.475,
+        "end": 11.915
+      },
+      {
+        "index": 30,
+        "word": "captured",
+        "start": 11.955,
+        "end": 12.296
+      },
+      {
+        "index": 31,
+        "word": "by",
+        "start": 12.316,
+        "end": 12.396
+      },
+      {
+        "index": 32,
+        "word": "the",
+        "start": 12.436,
+        "end": 12.496
+      },
+      {
+        "index": 33,
+        "word": "Sassanids",
+        "start": 12.556,
+        "end": 13.036
+      },
+      {
+        "index": 34,
+        "word": "in",
+        "start": 13.076,
+        "end": 13.156
+      },
+      {
+        "index": 35,
+        "word": "260",
+        "start": 13.216,
+        "end": 13.776
+      },
+      {
+        "index": 36,
+        "word": "CE",
+        "start": 13.836,
+        "end": 14.076
+      },
+      {
+        "index": 37,
+        "word": "shattered",
+        "start": 14.596,
+        "end": 14.937
+      },
+      {
+        "index": 38,
+        "word": "Rome's",
+        "start": 14.977,
+        "end": 15.237
+      },
+      {
+        "index": 39,
+        "word": "prestige.",
+        "start": 15.257,
+        "end": 15.737
+      },
+      {
+        "index": 40,
+        "word": "Diocletian",
+        "start": 16.157,
+        "end": 16.737
+      },
+      {
+        "index": 41,
+        "word": "introduced",
+        "start": 16.837,
+        "end": 17.277
+      },
+      {
+        "index": 42,
+        "word": "the",
+        "start": 17.317,
+        "end": 17.377
+      },
+      {
+        "index": 43,
+        "word": "Tetrarchy,",
+        "start": 17.417,
+        "end": 17.898
+      },
+      {
+        "index": 44,
+        "word": "reformed",
+        "start": 18.138,
+        "end": 18.438
+      },
+      {
+        "index": 45,
+        "word": "taxes,",
+        "start": 18.478,
+        "end": 18.918
+      },
+      {
+        "index": 46,
+        "word": "and",
+        "start": 19.198,
+        "end": 19.298
+      },
+      {
+        "index": 47,
+        "word": "reorganized",
+        "start": 19.338,
+        "end": 19.938
+      },
+      {
+        "index": 48,
+        "word": "the",
+        "start": 19.958,
+        "end": 20.058
+      },
+      {
+        "index": 49,
+        "word": "army.",
+        "start": 20.118,
+        "end": 20.339
+      },
+      {
+        "index": 50,
+        "word": "In",
+        "start": 20.719,
+        "end": 20.979
+      },
+      {
+        "index": 51,
+        "word": "285",
+        "start": 21.019,
+        "end": 21.439
+      },
+      {
+        "index": 52,
+        "word": "CE",
+        "start": 21.479,
+        "end": 21.839
+      },
+      {
+        "index": 53,
+        "word": "he",
+        "start": 21.879,
+        "end": 21.999
+      },
+      {
+        "index": 54,
+        "word": "split",
+        "start": 22.039,
+        "end": 22.279
+      },
+      {
+        "index": 55,
+        "word": "the",
+        "start": 22.299,
+        "end": 22.379
+      },
+      {
+        "index": 56,
+        "word": "Empire",
+        "start": 22.459,
+        "end": 22.819
+      },
+      {
+        "index": 57,
+        "word": "into",
+        "start": 22.879,
+        "end": 23.04
+      },
+      {
+        "index": 58,
+        "word": "East",
+        "start": 23.18,
+        "end": 23.38
+      },
+      {
+        "index": 59,
+        "word": "and",
+        "start": 23.54,
+        "end": 23.64
+      },
+      {
+        "index": 60,
+        "word": "West.",
+        "start": 23.68,
+        "end": 23.98
+      },
+      {
+        "index": 61,
+        "word": "Diocletian",
+        "start": 24.38,
+        "end": 24.981
+      },
+      {
+        "index": 62,
+        "word": "abdicated",
+        "start": 25.101,
+        "end": 25.542
+      },
+      {
+        "index": 63,
+        "word": "in",
+        "start": 25.582,
+        "end": 25.662
+      },
+      {
+        "index": 64,
+        "word": "305",
+        "start": 26.363,
+        "end": 26.604
+      },
+      {
+        "index": 65,
+        "word": "CE,",
+        "start": 26.684,
+        "end": 26.964
+      },
+      {
+        "index": 66,
+        "word": "Constantine",
+        "start": 27.385,
+        "end": 27.946
+      },
+      {
+        "index": 67,
+        "word": "became",
+        "start": 28.046,
+        "end": 28.347
+      },
+      {
+        "index": 68,
+        "word": "sole",
+        "start": 28.427,
+        "end": 28.667
+      },
+      {
+        "index": 69,
+        "word": "ruler.",
+        "start": 28.707,
+        "end": 28.988
+      },
+      {
+        "index": 70,
+        "word": "Constantine's",
+        "start": 29.389,
+        "end": 29.99
+      },
+      {
+        "index": 71,
+        "word": "312",
+        "start": 30.43,
+        "end": 30.691
+      },
+      {
+        "index": 72,
+        "word": "CE",
+        "start": 30.731,
+        "end": 30.971
+      },
+      {
+        "index": 73,
+        "word": "victory",
+        "start": 31.051,
+        "end": 31.392
+      },
+      {
+        "index": 74,
+        "word": "at",
+        "start": 31.492,
+        "end": 31.552
+      },
+      {
+        "index": 75,
+        "word": "Milvian",
+        "start": 31.612,
+        "end": 31.953
+      },
+      {
+        "index": 76,
+        "word": "Bridge",
+        "start": 31.973,
+        "end": 32.233
+      },
+      {
+        "index": 77,
+        "word": "led",
+        "start": 32.454,
+        "end": 32.574
+      },
+      {
+        "index": 78,
+        "word": "to",
+        "start": 32.594,
+        "end": 32.674
+      },
+      {
+        "index": 79,
+        "word": "Christian",
+        "start": 32.694,
+        "end": 33.015
+      },
+      {
+        "index": 80,
+        "word": "conversion.",
+        "start": 33.055,
+        "end": 33.475
+      },
+      {
+        "index": 81,
+        "word": "He",
+        "start": 33.816,
+        "end": 33.916
+      },
+      {
+        "index": 82,
+        "word": "founded",
+        "start": 33.956,
+        "end": 34.237
+      },
+      {
+        "index": 83,
+        "word": "Constantinople",
+        "start": 34.277,
+        "end": 34.978
+      },
+      {
+        "index": 84,
+        "word": "in",
+        "start": 35.038,
+        "end": 35.118
+      },
+      {
+        "index": 85,
+        "word": "330",
+        "start": 35.198,
+        "end": 35.739
+      },
+      {
+        "index": 86,
+        "word": "CE,",
+        "start": 35.779,
+        "end": 36.08
+      },
+      {
+        "index": 87,
+        "word": "shifting",
+        "start": 36.5,
+        "end": 36.801
+      },
+      {
+        "index": 88,
+        "word": "power",
+        "start": 36.841,
+        "end": 37.141
+      },
+      {
+        "index": 89,
+        "word": "eastward.",
+        "start": 37.182,
+        "end": 37.502
+      },
+      {
+        "index": 90,
+        "word": "Otto",
+        "start": 37.923,
+        "end": 38.083
+      },
+      {
+        "index": 91,
+        "word": "Acer",
+        "start": 38.143,
+        "end": 38.404
+      },
+      {
+        "index": 92,
+        "word": "deposed",
+        "start": 38.444,
+        "end": 38.784
+      },
+      {
+        "index": 93,
+        "word": "Romulus",
+        "start": 38.844,
+        "end": 39.265
+      },
+      {
+        "index": 94,
+        "word": "Augustulus",
+        "start": 39.325,
+        "end": 39.886
+      },
+      {
+        "index": 95,
+        "word": "in",
+        "start": 39.966,
+        "end": 40.026
+      },
+      {
+        "index": 96,
+        "word": "476",
+        "start": 40.106,
+        "end": 40.607
+      },
+      {
+        "index": 97,
+        "word": "CE,",
+        "start": 40.888,
+        "end": 41.228
+      },
+      {
+        "index": 98,
+        "word": "ending",
+        "start": 41.589,
+        "end": 41.749
+      },
+      {
+        "index": 99,
+        "word": "the",
+        "start": 41.769,
+        "end": 41.829
+      },
+      {
+        "index": 100,
+        "word": "Western",
+        "start": 41.869,
+        "end": 42.17
+      },
+      {
+        "index": 101,
+        "word": "Empire.",
+        "start": 42.21,
+        "end": 42.53
+      },
+      {
+        "index": 102,
+        "word": "The",
+        "start": 42.911,
+        "end": 43.011
+      },
+      {
+        "index": 103,
+        "word": "Eastern",
+        "start": 43.071,
+        "end": 43.352
+      },
+      {
+        "index": 104,
+        "word": "Roman",
+        "start": 43.392,
+        "end": 43.632
+      },
+      {
+        "index": 105,
+        "word": "Empire",
+        "start": 43.712,
+        "end": 44.033
+      },
+      {
+        "index": 106,
+        "word": "persisted",
+        "start": 44.073,
+        "end": 44.514
+      },
+      {
+        "index": 107,
+        "word": "until",
+        "start": 44.634,
+        "end": 44.854
+      },
+      {
+        "index": 108,
+        "word": "1453",
+        "start": 44.914,
+        "end": 45.295
+      },
+      {
+        "index": 109,
+        "word": "CE,",
+        "start": 45.856,
+        "end": 46.156
+      },
+      {
+        "index": 110,
+        "word": "preserving",
+        "start": 46.497,
+        "end": 46.918
+      },
+      {
+        "index": 111,
+        "word": "law",
+        "start": 46.998,
+        "end": 47.238
+      },
+      {
+        "index": 112,
+        "word": "and",
+        "start": 47.459,
+        "end": 47.539
+      },
+      {
+        "index": 113,
+        "word": "culture.",
+        "start": 47.579,
+        "end": 47.919
+      }
+    ],
+    "sentences": [
+      {
+        "sentence_index": 0,
+        "start": 0.131,
+        "end": 2.612,
+        "word_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "sentence_index": 1,
+        "start": 2.992,
+        "end": 6.533,
+        "word_indices": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "sentence_index": 2,
+        "start": 6.974,
+        "end": 11.075,
+        "word_indices": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      {
+        "sentence_index": 3,
+        "start": 11.475,
+        "end": 15.737,
+        "word_indices": [
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      {
+        "sentence_index": 4,
+        "start": 16.157,
+        "end": 20.339,
+        "word_indices": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ]
+      },
+      {
+        "sentence_index": 5,
+        "start": 20.719,
+        "end": 23.98,
+        "word_indices": [
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ]
+      },
+      {
+        "sentence_index": 6,
+        "start": 24.38,
+        "end": 28.988,
+        "word_indices": [
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69
+        ]
+      },
+      {
+        "sentence_index": 7,
+        "start": 29.389,
+        "end": 33.475,
+        "word_indices": [
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80
+        ]
+      },
+      {
+        "sentence_index": 8,
+        "start": 33.816,
+        "end": 37.502,
+        "word_indices": [
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89
+        ]
+      },
+      {
+        "sentence_index": 9,
+        "start": 38.143,
+        "end": 42.53,
+        "word_indices": [
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ]
+      },
+      {
+        "sentence_index": 10,
+        "start": 42.911,
+        "end": 47.919,
+        "word_indices": [
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "word_count": 114,
+    "sentence_count": 11
+  }
+}

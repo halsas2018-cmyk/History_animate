@@ -1,0 +1,69 @@
+{
+  "stage": "sentence_timing",
+  "data": {
+    "sentence_timing": [
+      {
+        "sentence_index": 0,
+        "text": "The collapse of the Western Roman Empire was not a sudden event, but a century-long disintegration triggered by systemic failure.",
+        "startFrame": 4,
+        "endFrame": 187,
+        "durationInFrames": 183
+      },
+      {
+        "sentence_index": 1,
+        "text": "Decades of civil war and economic crisis during the third century had already left the imperial infrastructure brittle.",
+        "startFrame": 199,
+        "endFrame": 366,
+        "durationInFrames": 167
+      },
+      {
+        "sentence_index": 2,
+        "text": "Diocletian’s decision to divide the empire into East and West created a permanent administrative split, leaving the West increasingly vulnerable.",
+        "startFrame": 377,
+        "endFrame": 598,
+        "durationInFrames": 221
+      },
+      {
+        "sentence_index": 3,
+        "text": "The westward expansion of the Huns pushed Germanic tribes toward Roman borders, culminating in the catastrophic Roman defeat at the Battle of Adrianople in 378.",
+        "startFrame": 608,
+        "endFrame": 841,
+        "durationInFrames": 233
+      },
+      {
+        "sentence_index": 4,
+        "text": "By 410, the unthinkable occurred when Alaric and the Visigoths sacked the city of Rome for the first time in eight centuries.",
+        "startFrame": 873,
+        "endFrame": 1064,
+        "durationInFrames": 191
+      },
+      {
+        "sentence_index": 5,
+        "text": "Internal stability crumbled as the military relied on foreign mercenaries, while the loss of North African grain supplies crippled the economy.",
+        "startFrame": 1079,
+        "endFrame": 1285,
+        "durationInFrames": 206
+      },
+      {
+        "sentence_index": 6,
+        "text": "Finally, in 476, the Germanic chieftain Odoacer deposed the teenage emperor Romulus Augustulus.",
+        "startFrame": 1297,
+        "endFrame": 1469,
+        "durationInFrames": 172
+      },
+      {
+        "sentence_index": 7,
+        "text": "By sending the imperial regalia to Constantinople, Odoacer effectively signaled the end of the Western Roman Empire.",
+        "startFrame": 1482,
+        "endFrame": 1656,
+        "durationInFrames": 174
+      }
+    ],
+    "audio_path": "narration.mp3",
+    "duration": 55.56
+  },
+  "meta": {
+    "sentence_count": 8,
+    "word_count": 157
+  }
+}

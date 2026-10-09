@@ -1,0 +1,49 @@
+{
+  "stage": "visual_timing",
+  "data": {
+    "visuals": [
+      {
+        "visual_index": 0,
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "image": "scene_1.png",
+        "start": 0.4,
+        "end": 15.733,
+        "duration": 15.333
+      },
+      {
+        "visual_index": 1,
+        "sentence_indices": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "image": "scene_2.png",
+        "start": 16.167,
+        "end": 37.5,
+        "duration": 21.333
+      },
+      {
+        "visual_index": 2,
+        "sentence_indices": [
+          9,
+          10
+        ],
+        "image": "scene_3.png",
+        "start": 38.133,
+        "end": 47.933,
+        "duration": 9.8
+      }
+    ]
+  },
+  "meta": {
+    "visual_count": 3,
+    "total_sentences": 11
+  }
+}

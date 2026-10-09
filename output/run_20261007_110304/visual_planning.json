@@ -1,0 +1,65 @@
+{
+  "stage": "visual_planning",
+  "data": {
+    "visual_plan": [
+      {
+        "sentence_indices": [
+          0
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a dramatic wide-angle view of Mount Vesuvius erupting in 79 AD, dark billowing smoke clouds contrasting against a bright sky, the ancient Roman city of Pompeii visible at the base, cinematic historical illustration, high detail."
+      },
+      {
+        "sentence_indices": [
+          1
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a detailed depiction of a Roman forum in 62 AD showing cracked marble columns and fallen statues after a major earthquake, Roman citizens in togas looking concerned, architectural ruins, historical reconstruction."
+      },
+      {
+        "sentence_indices": [
+          2
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a massive Plinian column of ash and pumice rising thirty kilometers into the atmosphere, dark grey volcanic plume towering over the Italian landscape, dramatic scale, historical scientific illustration."
+      },
+      {
+        "sentence_indices": [
+          3
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a split-view composition showing the city of Pompeii covered in falling grey lapilli stones on one side and the coastal city of Herculaneum near the sea on the other, Roman architecture, period-accurate buildings, atmospheric perspective."
+      },
+      {
+        "sentence_indices": [
+          4,
+          5
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a terrifying pyroclastic surge of superheated gas and ash rushing down the slopes of Vesuvius toward a Roman villa, motion blur, intense heat haze, dramatic lighting, historical tragedy."
+      },
+      {
+        "sentence_indices": [
+          6
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, Pliny the Elder standing on the deck of a Roman quinquereme ship near the coast of Stabiae, looking toward the erupting volcano, Roman naval soldiers in the background, period-accurate armor and ship design."
+      },
+      {
+        "sentence_indices": [
+          7
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, Pliny the Younger sitting at a wooden desk in a Roman study, holding a stylus and wax tablet, writing his eyewitness account by candlelight, Roman interior decor, scholarly atmosphere."
+      },
+      {
+        "sentence_indices": [
+          8
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, an archaeological cross-section of a Pompeian house interior, showing preserved frescoes on walls, carbonized organic matter, and the outline of a human form encased in hardened volcanic ash, time capsule aesthetic."
+      },
+      {
+        "sentence_indices": [
+          9
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, Giuseppe Fiorelli in 1863, wearing 19th-century attire, carefully pouring plaster into a void in the volcanic ash to create a cast of a victim, archaeological excavation site, historical tools, meticulous process."
+      }
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "stage": "story_generation",
+  "data": {
+    "title": "The Collapse of Western Rome",
+    "sentences": [
+      "The fall of the Western Roman Empire was not a single event, but a slow dissolution centuries in the making.",
+      "Following the instability of the third century, Diocletian attempted to stabilize the state by dividing the empire into East and West.",
+      "However, economic decay, hyperinflation, and a reliance on foreign mercenaries left the Western borders fragile.",
+      "The arrival of the Huns in Europe triggered a mass migration of Germanic tribes across Roman frontiers.",
+      "After the devastating defeat at Adrianople in 378 AD, the myth of Roman invincibility was shattered forever.",
+      "By 410 AD, the city of Rome fell to the Visigoths, marking the first time in eight centuries that the capital had been sacked.",
+      "The loss of North Africa to the Vandals crippled Rome's grain supply and tax revenue.",
+      "Finally, in 476 AD, the Germanic leader Odoacer deposed the teenage emperor Romulus Augustulus.",
+      "By sending the imperial regalia to Constantinople, Odoacer ended the Western line, while the East survived as the Byzantine Empire."
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite",
+    "length_mode": "short"
+  }
+}

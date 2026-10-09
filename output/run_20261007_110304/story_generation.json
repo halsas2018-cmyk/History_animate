@@ -1,0 +1,22 @@
+{
+  "stage": "story_generation",
+  "data": {
+    "title": "The Destruction of Pompeii",
+    "sentences": [
+      "In 79 AD, Mount Vesuvius erupted with a violence that silenced a region and preserved it for eternity.",
+      "Years of seismic warnings, including a major earthquake in 62 AD, preceded the catastrophe.",
+      "The eruption began with a massive Plinian column of ash and pumice rising thirty kilometers into the sky.",
+      "While prevailing winds buried Pompeii under falling lapilli, the city of Herculaneum faced a different fate.",
+      "During the night, the eruption column collapsed, triggering superheated pyroclastic surges that swept down the mountain.",
+      "These surges killed inhabitants instantly through thermal shock.",
+      "Pliny the Elder, commanding the Roman fleet, died attempting a rescue mission at Stabiae.",
+      "His nephew, Pliny the Younger, recorded the only surviving eyewitness account of the disaster.",
+      "The rapid burial acted as a time capsule, sealing frescoes, organic matter, and victims in ash.",
+      "In 1863, Giuseppe Fiorelli developed the technique of plaster casting, revealing the tragic final moments of those trapped in the debris."
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite",
+    "length_mode": "short"
+  }
+}

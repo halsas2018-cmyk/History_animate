@@ -1,0 +1,23 @@
+{
+  "stage": "story_generation",
+  "data": {
+    "title": "Rome's Long Decline",
+    "sentences": [
+      "Rome’s fall was a slow erosion that reshaped Europe.",
+      "It began in 235 CE when Maximinus Thrax seized power.",
+      "Civil wars and invasions destabilized the empire until 260 CE.",
+      "Valerian’s capture by the Sassanids in 260 CE shattered Rome’s prestige.",
+      "Diocletian introduced the Tetrarchy, reformed taxes, and reorganized the army.",
+      "In 285 CE he split the empire into East and West.",
+      "Diocletian abdicated in 305 CE; Constantine became sole ruler.",
+      "Constantine’s 312 CE victory at Milvian Bridge led to Christian conversion.",
+      "He founded Constantinople in 330 CE, shifting power eastward.",
+      "Odoacer deposed Romulus Augustulus in 476 CE, ending the Western Empire.",
+      "The Eastern Roman Empire persisted until 1453 CE, preserving law and culture."
+    ]
+  },
+  "meta": {
+    "model_key": "groq-gpt-oss-20b",
+    "length_mode": "short"
+  }
+}

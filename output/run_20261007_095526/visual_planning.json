@@ -1,0 +1,48 @@
+{
+  "stage": "visual_planning",
+  "data": {
+    "visual_plan": [
+      {
+        "sentence_indices": [
+          0,
+          1
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a crumbling Roman marble forum with cracked columns and overgrown weeds, weathered stone statues showing signs of decay, dusty atmosphere, cinematic lighting, historical ruins reflecting systemic decline, hyper-realistic, detailed textures."
+      },
+      {
+        "sentence_indices": [
+          2
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a stylized ancient map of the Roman Empire split by a sharp, jagged line down the middle, two distinct administrative centers represented by golden Roman imperial seals, parchment texture, ink-drawn borders, historical cartography style."
+      },
+      {
+        "sentence_indices": [
+          3
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a chaotic battlefield scene at dusk, Roman legionaries in segmented lorica segmentata armor clashing with Germanic warriors, silhouettes of Huns on horseback in the background, smoke and dust, dramatic action, historical battle of Adrianople, intense atmosphere."
+      },
+      {
+        "sentence_indices": [
+          4
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, the city of Rome in flames, Visigoth warriors led by Alaric standing before the burning ruins of the Roman Senate, smoke rising against a dark sky, debris and fallen marble columns, epic scale, historical tragedy."
+      },
+      {
+        "sentence_indices": [
+          5
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, a split-screen visual: on the left, a group of barbarian mercenaries in furs and chainmail standing guard; on the right, an empty Roman marketplace with barren grain sacks and starving citizens, symbolic of economic collapse, detailed historical illustration."
+      },
+      {
+        "sentence_indices": [
+          6,
+          7
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, the Germanic chieftain Odoacer standing in a grand throne room, holding the purple imperial cloak and crown of the young Romulus Augustulus, a wooden chest prepared to send the regalia to Constantinople, somber atmosphere, historical transition of power, 5th-century attire."
+      }
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite"
+  }
+}
