@@ -1,12 +1,12 @@
-import { bookFlip, BookFlipDirection } from "@remotion/transitions/book-flip";
+import { wipe } from "@remotion/transitions/wipe";
 import { linearTiming } from "@remotion/transitions";
 
 /**
- * Returns a book-flip transition presentation configuration for use with TransitionSeries.Transition.
- * Gives a page-flipping / book-turn feel between history scenes.
+ * Returns a wipe transition presentation configuration for use with TransitionSeries.Transition.
+ * Gives a page-opening-style wipe between history scenes.
  */
-export const getSceneTransition = (direction: BookFlipDirection = "from-right") => {
-  return bookFlip({
+export const getSceneTransition = (direction: string = "from-right") => {
+  return wipe({
     direction,
   });
 };

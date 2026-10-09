@@ -1,1 +1,65 @@
-{"visuals": [{"visual_index": 0, "sentence_indices": [0], "image": "scene_1.png", "start": 0.0, "end": 10.0, "duration": 10.0}, {"visual_index": 1, "sentence_indices": [1], "image": "scene_2.png", "start": 10.0, "end": 20.0, "duration": 10.0}]}
+{
+  "stage": "visual_timing",
+  "data": {
+    "visuals": [
+      {
+        "visual_index": 0,
+        "sentence_indices": [
+          0,
+          1
+        ],
+        "image": "scene_1.png",
+        "start": 0.2,
+        "end": 13.567,
+        "duration": 13.367
+      },
+      {
+        "visual_index": 1,
+        "sentence_indices": [
+          2,
+          3
+        ],
+        "image": "scene_2.png",
+        "start": 13.933,
+        "end": 28.3,
+        "duration": 14.367
+      },
+      {
+        "visual_index": 2,
+        "sentence_indices": [
+          4,
+          5
+        ],
+        "image": "scene_3.png",
+        "start": 28.767,
+        "end": 42.767,
+        "duration": 14.0
+      },
+      {
+        "visual_index": 3,
+        "sentence_indices": [
+          6,
+          7
+        ],
+        "image": "scene_4.png",
+        "start": 43.2,
+        "end": 53.6,
+        "duration": 10.4
+      },
+      {
+        "visual_index": 4,
+        "sentence_indices": [
+          8
+        ],
+        "image": "scene_5.png",
+        "start": 53.967,
+        "end": 59.267,
+        "duration": 5.3
+      }
+    ]
+  },
+  "meta": {
+    "visual_count": 5,
+    "total_sentences": 9
+  }
+}
