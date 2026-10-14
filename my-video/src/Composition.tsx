@@ -40,6 +40,7 @@ export type CompositionProps = {
   captionTimingSrc?: string;
   captionDisplayMode?: CaptionDisplayMode;
   captionHighlightColor?: string;
+  captionPosition?: "center" | "bottom";
   enableCaptions?: boolean;
 };
 
@@ -156,8 +157,9 @@ export const ShortComposition: React.FC = () => {
         transitionAudioSrc: "page-flip.mp3",
         transitionDurationInFrames: DEFAULT_TRANSITION_DURATION_IN_FRAMES,
         captionTimingSrc: "timing.json",
-        captionDisplayMode: "phrase",
+        captionDisplayMode: "word",
         captionHighlightColor: "#39E508",
+        captionPosition: "center",
         enableCaptions: true,
       }}
     />
@@ -180,8 +182,9 @@ export const LongComposition: React.FC = () => {
         transitionAudioSrc: "page-flip.mp3",
         transitionDurationInFrames: DEFAULT_TRANSITION_DURATION_IN_FRAMES,
         captionTimingSrc: "timing.json",
-        captionDisplayMode: "phrase",
+        captionDisplayMode: "word",
         captionHighlightColor: "#39E508",
+        captionPosition: "center",
         enableCaptions: true,
       }}
     />
@@ -204,8 +207,9 @@ export const MyComposition: React.FC = () => {
         transitionAudioSrc: "page-flip.mp3",
         transitionDurationInFrames: DEFAULT_TRANSITION_DURATION_IN_FRAMES,
         captionTimingSrc: "timing.json",
-        captionDisplayMode: "phrase",
+        captionDisplayMode: "word",
         captionHighlightColor: "#39E508",
+        captionPosition: "center",
         enableCaptions: true,
       }}
     />
@@ -218,8 +222,9 @@ export const MyComponent: React.FC<CompositionProps> = ({
   transitionAudioSrc = "page-flip.mp3",
   transitionDurationInFrames = DEFAULT_TRANSITION_DURATION_IN_FRAMES,
   captionTimingSrc = "timing.json",
-  captionDisplayMode = "phrase",
+  captionDisplayMode = "word",
   captionHighlightColor = "#39E508",
+  captionPosition = "center",
   enableCaptions = true,
 }) => {
   const data = visualTimingData || DEFAULT_VISUAL_TIMING_DATA;
@@ -314,6 +319,7 @@ export const MyComponent: React.FC<CompositionProps> = ({
           timingSrc={captionTimingSrc}
           displayMode={captionDisplayMode}
           highlightColor={captionHighlightColor}
+          position={captionPosition}
         />
       )}
     </>

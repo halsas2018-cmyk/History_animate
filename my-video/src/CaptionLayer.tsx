@@ -164,11 +164,11 @@ export const CaptionLayer: React.FC<CaptionLayerProps> = ({
   timingSrc = "timing.json",
   timingData,
   emojiCandidate = null,
-  displayMode = "phrase",
+  displayMode = "word",
   highlightColor = DEFAULT_HIGHLIGHT_COLOR,
   fontSize,
   combineTokensWithinMilliseconds,
-  position = "bottom",
+  position = "center",
   bottomOffsetPercent = 14,
 }) => {
   const [loadedPayload, setLoadedPayload] = useState<AnyTimingPayload | null>(

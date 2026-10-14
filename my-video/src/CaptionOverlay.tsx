@@ -148,23 +148,26 @@ const CaptionPage: React.FC<{
 export const CaptionOverlay: React.FC<CaptionOverlayProps> = ({
   captions,
   emojiCandidate = null,
-  displayMode = "phrase",
+  displayMode = "word",
   highlightColor = DEFAULT_HIGHLIGHT_COLOR,
   fontSize: customFontSize,
   combineTokensWithinMilliseconds,
-  position = "bottom",
+  position = "center",
   bottomOffsetPercent = 14,
 }) => {
   const { fps, width, height } = useVideoConfig();
 
   // Dynamic responsive font size if not explicitly specified
   const isPortrait = height > width;
-  const responsiveFontSize = customFontSize ?? (isPortrait ? 68 : 52);
+  const isWordByWord = displayMode === "word";
+  const defaultSize = isWordByWord
+    ? (isPortrait ? 84 : 70)
+    : (isPortrait ? 68 : 52);
+  const responsiveFontSize = customFontSize ?? defaultSize;
 
   // Determine windowing duration
   // If displayMode === "word", set pageBreakAfter on every token and combine=0 for 1 word per page
   // If displayMode === "phrase", use combineTokensWithinMilliseconds (default 1200ms)
-  const isWordByWord = displayMode === "word";
   const effectiveWindowMs = isWordByWord
     ? 0
     : (combineTokensWithinMilliseconds ?? DEFAULT_SWITCH_CAPTIONS_EVERY_MS);
