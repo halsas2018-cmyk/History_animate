@@ -86,7 +86,22 @@ def copy_assets_to_public(run_dir: Path, output_paths: List[Path], public_dir: O
             print(f"  Skipped identical visual_timing.json")
         copied_files.append(dest_timing)
 
-    # 4. Copy whisperx_timing.json (word-level timestamps for captions)
+    # 4. Copy timing.json / whisperx_timing.json (word-level timestamps for captions)
+    timing_source = None
+    if (run_dir / "timing.json").exists():
+        timing_source = run_dir / "timing.json"
+    elif (run_dir / "whisperx_timing.json").exists():
+        timing_source = run_dir / "whisperx_timing.json"
+
+    if timing_source:
+        dest_timing_json = public_dir / "timing.json"
+        if not files_are_identical(timing_source, dest_timing_json):
+            shutil.copy2(timing_source, dest_timing_json)
+            print(f"  Copied {timing_source.name} -> {dest_timing_json}")
+        else:
+            print(f"  Skipped identical {timing_source.name} -> timing.json")
+        copied_files.append(dest_timing_json)
+
     whisperx_path = run_dir / "whisperx_timing.json"
     if whisperx_path.exists():
         dest_whisperx = public_dir / "whisperx_timing.json"

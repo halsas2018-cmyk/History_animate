@@ -8,6 +8,8 @@ import {
 } from "remotion";
 import { TransitionSeries } from "@remotion/transitions";
 import { getSceneTransition, getSceneTransitionTiming } from "./SceneTransition";
+import { CaptionLayer } from "./CaptionLayer";
+import type { CaptionDisplayMode } from "./CaptionOverlay";
 import React from "react";
 
 export interface VisualEntry {
@@ -35,6 +37,10 @@ export type CompositionProps = {
   audioSrc?: string;
   transitionAudioSrc?: string;
   transitionDurationInFrames?: number;
+  captionTimingSrc?: string;
+  captionDisplayMode?: CaptionDisplayMode;
+  captionHighlightColor?: string;
+  enableCaptions?: boolean;
 };
 
 // Default fallback timing data if visual_timing.json is unavailable
@@ -149,6 +155,10 @@ export const ShortComposition: React.FC = () => {
         audioSrc: "narration.mp3",
         transitionAudioSrc: "page-flip.mp3",
         transitionDurationInFrames: DEFAULT_TRANSITION_DURATION_IN_FRAMES,
+        captionTimingSrc: "timing.json",
+        captionDisplayMode: "phrase",
+        captionHighlightColor: "#39E508",
+        enableCaptions: true,
       }}
     />
   );
@@ -169,6 +179,10 @@ export const LongComposition: React.FC = () => {
         audioSrc: "narration.mp3",
         transitionAudioSrc: "page-flip.mp3",
         transitionDurationInFrames: DEFAULT_TRANSITION_DURATION_IN_FRAMES,
+        captionTimingSrc: "timing.json",
+        captionDisplayMode: "phrase",
+        captionHighlightColor: "#39E508",
+        enableCaptions: true,
       }}
     />
   );
@@ -189,6 +203,10 @@ export const MyComposition: React.FC = () => {
         audioSrc: "narration.mp3",
         transitionAudioSrc: "page-flip.mp3",
         transitionDurationInFrames: DEFAULT_TRANSITION_DURATION_IN_FRAMES,
+        captionTimingSrc: "timing.json",
+        captionDisplayMode: "phrase",
+        captionHighlightColor: "#39E508",
+        enableCaptions: true,
       }}
     />
   );
@@ -199,6 +217,10 @@ export const MyComponent: React.FC<CompositionProps> = ({
   audioSrc = "narration.mp3",
   transitionAudioSrc = "page-flip.mp3",
   transitionDurationInFrames = DEFAULT_TRANSITION_DURATION_IN_FRAMES,
+  captionTimingSrc = "timing.json",
+  captionDisplayMode = "phrase",
+  captionHighlightColor = "#39E508",
+  enableCaptions = true,
 }) => {
   const data = visualTimingData || DEFAULT_VISUAL_TIMING_DATA;
   const visuals = data.data.visuals;
@@ -285,6 +307,15 @@ export const MyComponent: React.FC<CompositionProps> = ({
             </Sequence>
           );
         })}
+
+      {/* Word-by-word synchronized captions with dynamic highlighting */}
+      {enableCaptions && (
+        <CaptionLayer
+          timingSrc={captionTimingSrc}
+          displayMode={captionDisplayMode}
+          highlightColor={captionHighlightColor}
+        />
+      )}
     </>
   );
 };

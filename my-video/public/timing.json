@@ -1,0 +1,1163 @@
+{
+  "stage": "whisperx_timing",
+  "data": {
+    "audio_path": "narration.mp3",
+    "duration": 59.616,
+    "words": [
+      {
+        "index": 0,
+        "word": "Standing",
+        "start": 0.191,
+        "end": 0.551
+      },
+      {
+        "index": 1,
+        "word": "as",
+        "start": 0.611,
+        "end": 0.691
+      },
+      {
+        "index": 2,
+        "word": "the",
+        "start": 0.731,
+        "end": 0.831
+      },
+      {
+        "index": 3,
+        "word": "only",
+        "start": 0.991,
+        "end": 1.211
+      },
+      {
+        "index": 4,
+        "word": "largely",
+        "start": 1.331,
+        "end": 1.732
+      },
+      {
+        "index": 5,
+        "word": "intact",
+        "start": 1.792,
+        "end": 2.212
+      },
+      {
+        "index": 6,
+        "word": "wonder",
+        "start": 2.292,
+        "end": 2.532
+      },
+      {
+        "index": 7,
+        "word": "of",
+        "start": 2.572,
+        "end": 2.612
+      },
+      {
+        "index": 8,
+        "word": "the",
+        "start": 2.632,
+        "end": 2.712
+      },
+      {
+        "index": 9,
+        "word": "ancient",
+        "start": 2.792,
+        "end": 3.052
+      },
+      {
+        "index": 10,
+        "word": "world,",
+        "start": 3.092,
+        "end": 3.332
+      },
+      {
+        "index": 11,
+        "word": "the",
+        "start": 3.592,
+        "end": 3.692
+      },
+      {
+        "index": 12,
+        "word": "Great",
+        "start": 3.732,
+        "end": 3.973
+      },
+      {
+        "index": 13,
+        "word": "Pyramid",
+        "start": 4.033,
+        "end": 4.393
+      },
+      {
+        "index": 14,
+        "word": "remains",
+        "start": 4.453,
+        "end": 4.753
+      },
+      {
+        "index": 15,
+        "word": "a",
+        "start": 4.793,
+        "end": 4.833
+      },
+      {
+        "index": 16,
+        "word": "testament",
+        "start": 4.873,
+        "end": 5.293
+      },
+      {
+        "index": 17,
+        "word": "to",
+        "start": 5.513,
+        "end": 5.613
+      },
+      {
+        "index": 18,
+        "word": "human",
+        "start": 5.673,
+        "end": 5.933
+      },
+      {
+        "index": 19,
+        "word": "ingenuity.",
+        "start": 6.053,
+        "end": 6.513
+      },
+      {
+        "index": 20,
+        "word": "Commissioned",
+        "start": 6.854,
+        "end": 7.214
+      },
+      {
+        "index": 21,
+        "word": "by",
+        "start": 7.254,
+        "end": 7.374
+      },
+      {
+        "index": 22,
+        "word": "Pharaoh",
+        "start": 7.434,
+        "end": 7.694
+      },
+      {
+        "index": 23,
+        "word": "Kufu",
+        "start": 7.754,
+        "end": 8.134
+      },
+      {
+        "index": 24,
+        "word": "during",
+        "start": 8.174,
+        "end": 8.374
+      },
+      {
+        "index": 25,
+        "word": "the",
+        "start": 8.394,
+        "end": 8.454
+      },
+      {
+        "index": 26,
+        "word": "Fourth",
+        "start": 8.514,
+        "end": 8.714
+      },
+      {
+        "index": 27,
+        "word": "Dynasty,",
+        "start": 8.754,
+        "end": 9.175
+      },
+      {
+        "index": 28,
+        "word": "this",
+        "start": 9.475,
+        "end": 9.635
+      },
+      {
+        "index": 29,
+        "word": "monumental",
+        "start": 9.695,
+        "end": 10.155
+      },
+      {
+        "index": 30,
+        "word": "tomb",
+        "start": 10.195,
+        "end": 10.415
+      },
+      {
+        "index": 31,
+        "word": "rose",
+        "start": 10.495,
+        "end": 10.775
+      },
+      {
+        "index": 32,
+        "word": "on",
+        "start": 10.835,
+        "end": 10.875
+      },
+      {
+        "index": 33,
+        "word": "the",
+        "start": 10.895,
+        "end": 10.975
+      },
+      {
+        "index": 34,
+        "word": "Giza",
+        "start": 10.995,
+        "end": 11.255
+      },
+      {
+        "index": 35,
+        "word": "Plateau,",
+        "start": 11.295,
+        "end": 11.735
+      },
+      {
+        "index": 36,
+        "word": "around",
+        "start": 11.936,
+        "end": 12.156
+      },
+      {
+        "index": 37,
+        "word": "25",
+        "start": 12.536,
+        "end": 12.796
+      },
+      {
+        "index": 38,
+        "word": "ADBC.",
+        "start": 12.916,
+        "end": 13.576
+      },
+      {
+        "index": 39,
+        "word": "Under",
+        "start": 13.936,
+        "end": 14.076
+      },
+      {
+        "index": 40,
+        "word": "the",
+        "start": 14.116,
+        "end": 14.176
+      },
+      {
+        "index": 41,
+        "word": "direction",
+        "start": 14.216,
+        "end": 14.617
+      },
+      {
+        "index": 42,
+        "word": "of",
+        "start": 14.657,
+        "end": 14.717
+      },
+      {
+        "index": 43,
+        "word": "architect",
+        "start": 14.857,
+        "end": 15.297
+      },
+      {
+        "index": 44,
+        "word": "Himino,",
+        "start": 15.317,
+        "end": 15.697
+      },
+      {
+        "index": 45,
+        "word": "workers",
+        "start": 16.057,
+        "end": 16.357
+      },
+      {
+        "index": 46,
+        "word": "labored",
+        "start": 16.397,
+        "end": 16.657
+      },
+      {
+        "index": 47,
+        "word": "for",
+        "start": 16.697,
+        "end": 16.817
+      },
+      {
+        "index": 48,
+        "word": "over",
+        "start": 16.877,
+        "end": 17.038
+      },
+      {
+        "index": 49,
+        "word": "two",
+        "start": 17.118,
+        "end": 17.298
+      },
+      {
+        "index": 50,
+        "word": "decades",
+        "start": 17.358,
+        "end": 17.718
+      },
+      {
+        "index": 51,
+        "word": "to",
+        "start": 17.758,
+        "end": 17.878
+      },
+      {
+        "index": 52,
+        "word": "assemble",
+        "start": 17.918,
+        "end": 18.338
+      },
+      {
+        "index": 53,
+        "word": "2.3",
+        "start": 18.398,
+        "end": 19.358
+      },
+      {
+        "index": 54,
+        "word": "million",
+        "start": 19.498,
+        "end": 19.799
+      },
+      {
+        "index": 55,
+        "word": "limestone",
+        "start": 19.839,
+        "end": 20.259
+      },
+      {
+        "index": 56,
+        "word": "blocks.",
+        "start": 20.299,
+        "end": 20.599
+      },
+      {
+        "index": 57,
+        "word": "Contrary",
+        "start": 21.079,
+        "end": 21.499
+      },
+      {
+        "index": 58,
+        "word": "to",
+        "start": 21.539,
+        "end": 21.639
+      },
+      {
+        "index": 59,
+        "word": "myths",
+        "start": 21.719,
+        "end": 21.959
+      },
+      {
+        "index": 60,
+        "word": "of",
+        "start": 21.999,
+        "end": 22.059
+      },
+      {
+        "index": 61,
+        "word": "slave",
+        "start": 22.119,
+        "end": 22.4
+      },
+      {
+        "index": 62,
+        "word": "labor,",
+        "start": 22.44,
+        "end": 22.72
+      },
+      {
+        "index": 63,
+        "word": "evidence",
+        "start": 23.08,
+        "end": 23.38
+      },
+      {
+        "index": 64,
+        "word": "reveals",
+        "start": 23.44,
+        "end": 23.78
+      },
+      {
+        "index": 65,
+        "word": "a",
+        "start": 23.84,
+        "end": 23.88
+      },
+      {
+        "index": 66,
+        "word": "skilled,",
+        "start": 23.92,
+        "end": 24.26
+      },
+      {
+        "index": 67,
+        "word": "paid",
+        "start": 24.6,
+        "end": 24.801
+      },
+      {
+        "index": 68,
+        "word": "workforce",
+        "start": 24.841,
+        "end": 25.281
+      },
+      {
+        "index": 69,
+        "word": "of",
+        "start": 25.321,
+        "end": 25.401
+      },
+      {
+        "index": 70,
+        "word": "up",
+        "start": 25.461,
+        "end": 25.541
+      },
+      {
+        "index": 71,
+        "word": "to",
+        "start": 25.581,
+        "end": 25.661
+      },
+      {
+        "index": 72,
+        "word": "30,000",
+        "start": 25.821,
+        "end": 26.381
+      },
+      {
+        "index": 73,
+        "word": "men",
+        "start": 26.421,
+        "end": 26.621
+      },
+      {
+        "index": 74,
+        "word": "organized",
+        "start": 26.821,
+        "end": 27.281
+      },
+      {
+        "index": 75,
+        "word": "into",
+        "start": 27.341,
+        "end": 27.502
+      },
+      {
+        "index": 76,
+        "word": "disciplined",
+        "start": 27.562,
+        "end": 27.982
+      },
+      {
+        "index": 77,
+        "word": "gangs.",
+        "start": 28.002,
+        "end": 28.302
+      },
+      {
+        "index": 78,
+        "word": "These",
+        "start": 28.782,
+        "end": 28.962
+      },
+      {
+        "index": 79,
+        "word": "labors",
+        "start": 29.002,
+        "end": 29.382
+      },
+      {
+        "index": 80,
+        "word": "utilized",
+        "start": 29.522,
+        "end": 29.903
+      },
+      {
+        "index": 81,
+        "word": "copper",
+        "start": 29.943,
+        "end": 30.223
+      },
+      {
+        "index": 82,
+        "word": "chisels",
+        "start": 30.263,
+        "end": 30.603
+      },
+      {
+        "index": 83,
+        "word": "and",
+        "start": 30.743,
+        "end": 30.843
+      },
+      {
+        "index": 84,
+        "word": "stone",
+        "start": 30.883,
+        "end": 31.143
+      },
+      {
+        "index": 85,
+        "word": "pounders",
+        "start": 31.183,
+        "end": 31.523
+      },
+      {
+        "index": 86,
+        "word": "to",
+        "start": 31.723,
+        "end": 31.823
+      },
+      {
+        "index": 87,
+        "word": "extract",
+        "start": 31.883,
+        "end": 32.304
+      },
+      {
+        "index": 88,
+        "word": "massive",
+        "start": 32.464,
+        "end": 32.824
+      },
+      {
+        "index": 89,
+        "word": "materials,",
+        "start": 32.844,
+        "end": 33.304
+      },
+      {
+        "index": 90,
+        "word": "including",
+        "start": 33.644,
+        "end": 34.004
+      },
+      {
+        "index": 91,
+        "word": "granite",
+        "start": 34.044,
+        "end": 34.364
+      },
+      {
+        "index": 92,
+        "word": "transported",
+        "start": 34.404,
+        "end": 34.945
+      },
+      {
+        "index": 93,
+        "word": "800",
+        "start": 34.965,
+        "end": 35.525
+      },
+      {
+        "index": 94,
+        "word": "kilometers",
+        "start": 35.565,
+        "end": 36.025
+      },
+      {
+        "index": 95,
+        "word": "from",
+        "start": 36.045,
+        "end": 36.165
+      },
+      {
+        "index": 96,
+        "word": "Aswan.",
+        "start": 36.245,
+        "end": 36.625
+      },
+      {
+        "index": 97,
+        "word": "To",
+        "start": 36.966,
+        "end": 37.046
+      },
+      {
+        "index": 98,
+        "word": "reach",
+        "start": 37.106,
+        "end": 37.266
+      },
+      {
+        "index": 99,
+        "word": "heights",
+        "start": 37.306,
+        "end": 37.526
+      },
+      {
+        "index": 100,
+        "word": "of",
+        "start": 37.566,
+        "end": 37.626
+      },
+      {
+        "index": 101,
+        "word": "over",
+        "start": 37.706,
+        "end": 38.126
+      },
+      {
+        "index": 102,
+        "word": "146",
+        "start": 38.206,
+        "end": 38.886
+      },
+      {
+        "index": 103,
+        "word": "meters,",
+        "start": 38.926,
+        "end": 39.207
+      },
+      {
+        "index": 104,
+        "word": "engineers",
+        "start": 39.547,
+        "end": 39.947
+      },
+      {
+        "index": 105,
+        "word": "likely",
+        "start": 40.007,
+        "end": 40.307
+      },
+      {
+        "index": 106,
+        "word": "employed",
+        "start": 40.347,
+        "end": 40.707
+      },
+      {
+        "index": 107,
+        "word": "complex",
+        "start": 40.787,
+        "end": 41.187
+      },
+      {
+        "index": 108,
+        "word": "ramp",
+        "start": 41.247,
+        "end": 41.448
+      },
+      {
+        "index": 109,
+        "word": "systems",
+        "start": 41.468,
+        "end": 41.808
+      },
+      {
+        "index": 110,
+        "word": "and",
+        "start": 42.128,
+        "end": 42.208
+      },
+      {
+        "index": 111,
+        "word": "wooden",
+        "start": 42.248,
+        "end": 42.468
+      },
+      {
+        "index": 112,
+        "word": "levers.",
+        "start": 42.488,
+        "end": 42.768
+      },
+      {
+        "index": 113,
+        "word": "Precision",
+        "start": 43.208,
+        "end": 43.629
+      },
+      {
+        "index": 114,
+        "word": "was",
+        "start": 43.649,
+        "end": 43.769
+      },
+      {
+        "index": 115,
+        "word": "paramount,",
+        "start": 43.809,
+        "end": 44.269
+      },
+      {
+        "index": 116,
+        "word": "as",
+        "start": 44.549,
+        "end": 44.649
+      },
+      {
+        "index": 117,
+        "word": "the",
+        "start": 44.669,
+        "end": 44.749
+      },
+      {
+        "index": 118,
+        "word": "structure",
+        "start": 44.789,
+        "end": 45.149
+      },
+      {
+        "index": 119,
+        "word": "is",
+        "start": 45.229,
+        "end": 45.309
+      },
+      {
+        "index": 120,
+        "word": "aligned",
+        "start": 45.349,
+        "end": 45.649
+      },
+      {
+        "index": 121,
+        "word": "to",
+        "start": 45.689,
+        "end": 45.769
+      },
+      {
+        "index": 122,
+        "word": "true",
+        "start": 45.809,
+        "end": 46.03
+      },
+      {
+        "index": 123,
+        "word": "north",
+        "start": 46.11,
+        "end": 46.33
+      },
+      {
+        "index": 124,
+        "word": "with",
+        "start": 46.37,
+        "end": 46.49
+      },
+      {
+        "index": 125,
+        "word": "remarkable",
+        "start": 46.55,
+        "end": 47.09
+      },
+      {
+        "index": 126,
+        "word": "stellar",
+        "start": 47.15,
+        "end": 47.45
+      },
+      {
+        "index": 127,
+        "word": "accuracy.",
+        "start": 47.53,
+        "end": 47.99
+      },
+      {
+        "index": 128,
+        "word": "Internal",
+        "start": 48.371,
+        "end": 48.691
+      },
+      {
+        "index": 129,
+        "word": "features",
+        "start": 48.751,
+        "end": 49.071
+      },
+      {
+        "index": 130,
+        "word": "like",
+        "start": 49.091,
+        "end": 49.231
+      },
+      {
+        "index": 131,
+        "word": "the",
+        "start": 49.251,
+        "end": 49.311
+      },
+      {
+        "index": 132,
+        "word": "Grand",
+        "start": 49.351,
+        "end": 49.611
+      },
+      {
+        "index": 133,
+        "word": "Gallery",
+        "start": 49.651,
+        "end": 50.051
+      },
+      {
+        "index": 134,
+        "word": "and",
+        "start": 50.191,
+        "end": 50.291
+      },
+      {
+        "index": 135,
+        "word": "relieving",
+        "start": 50.331,
+        "end": 50.692
+      },
+      {
+        "index": 136,
+        "word": "chambers",
+        "start": 50.752,
+        "end": 51.132
+      },
+      {
+        "index": 137,
+        "word": "showcase",
+        "start": 51.312,
+        "end": 51.792
+      },
+      {
+        "index": 138,
+        "word": "sophisticated",
+        "start": 51.932,
+        "end": 52.572
+      },
+      {
+        "index": 139,
+        "word": "structural",
+        "start": 52.612,
+        "end": 53.053
+      },
+      {
+        "index": 140,
+        "word": "engineering.",
+        "start": 53.173,
+        "end": 53.593
+      },
+      {
+        "index": 141,
+        "word": "for",
+        "start": 53.953,
+        "end": 54.776
+      },
+      {
+        "index": 142,
+        "word": "3,800",
+        "start": 54.796,
+        "end": 55.338
+      },
+      {
+        "index": 143,
+        "word": "years.",
+        "start": 55.398,
+        "end": 55.639
+      },
+      {
+        "index": 144,
+        "word": "This",
+        "start": 55.98,
+        "end": 56.12
+      },
+      {
+        "index": 145,
+        "word": "limestone",
+        "start": 56.201,
+        "end": 56.622
+      },
+      {
+        "index": 146,
+        "word": "marvel",
+        "start": 56.662,
+        "end": 56.963
+      },
+      {
+        "index": 147,
+        "word": "stood",
+        "start": 57.003,
+        "end": 57.244
+      },
+      {
+        "index": 148,
+        "word": "as",
+        "start": 57.485,
+        "end": 57.565
+      },
+      {
+        "index": 149,
+        "word": "the",
+        "start": 57.605,
+        "end": 57.686
+      },
+      {
+        "index": 150,
+        "word": "tallest",
+        "start": 57.726,
+        "end": 58.087
+      },
+      {
+        "index": 151,
+        "word": "man-made",
+        "start": 58.167,
+        "end": 58.549
+      },
+      {
+        "index": 152,
+        "word": "structure",
+        "start": 58.609,
+        "end": 58.93
+      },
+      {
+        "index": 153,
+        "word": "on",
+        "start": 58.99,
+        "end": 59.05
+      },
+      {
+        "index": 154,
+        "word": "earth.",
+        "start": 59.091,
+        "end": 59.251
+      }
+    ],
+    "sentences": [
+      {
+        "sentence_index": 0,
+        "start": 0.191,
+        "end": 6.513,
+        "word_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      {
+        "sentence_index": 1,
+        "start": 6.854,
+        "end": 13.576,
+        "word_indices": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38
+        ]
+      },
+      {
+        "sentence_index": 2,
+        "start": 13.936,
+        "end": 20.599,
+        "word_indices": [
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      {
+        "sentence_index": 3,
+        "start": 21.079,
+        "end": 28.302,
+        "word_indices": [
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77
+        ]
+      },
+      {
+        "sentence_index": 4,
+        "start": 28.782,
+        "end": 36.625,
+        "word_indices": [
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96
+        ]
+      },
+      {
+        "sentence_index": 5,
+        "start": 36.966,
+        "end": 42.768,
+        "word_indices": [
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112
+        ]
+      },
+      {
+        "sentence_index": 6,
+        "start": 43.208,
+        "end": 47.99,
+        "word_indices": [
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ]
+      },
+      {
+        "sentence_index": 7,
+        "start": 48.371,
+        "end": 53.593,
+        "word_indices": [
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140
+        ]
+      },
+      {
+        "sentence_index": 8,
+        "start": 53.953,
+        "end": 59.251,
+        "word_indices": [
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "word_count": 155,
+    "sentence_count": 9
+  }
+}
