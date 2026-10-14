@@ -1,0 +1,23 @@
+{
+  "stage": "story_generation",
+  "data": {
+    "title": "Justice and Terror in Rome",
+    "sentences": [
+      "Roman law maintained order through public displays of brutal retribution.",
+      "Crucifixion, known as the extreme punishment, was reserved for slaves and rebels to instill absolute terror.",
+      "Victims were scourged before being nailed to a cross, suffering until death by asphyxiation.",
+      "Constantine the Great finally abolished this practice in the fourth century.",
+      "For the crime of parricide, Romans enacted the punishment of the sack.",
+      "Offenders were sewn into a leather bag with a dog, a rooster, a viper, and a monkey before being cast into water.",
+      "This ritual symbolized the murderer's bestial nature.",
+      "Finally, the arena hosted the horror of condemnation to the beasts.",
+      "Commoners and Christians were thrown to lions and bears for public entertainment.",
+      "These punishments reinforced the state's power, while the elite enjoyed the privilege of a dignified beheading.",
+      "For the rest of the Roman populace, the law offered only a slow, gruesome end."
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite",
+    "length_mode": "short"
+  }
+}

@@ -88,13 +88,6 @@ class ModelSpec:
 
 MODEL_REGISTRY: dict[str, ModelSpec] = {
     # --- Groq (free tier, 30 req/min) ---
-    "groq-llama3-70b": ModelSpec(
-        key="groq-llama3-70b",
-        provider=ProviderName.GROQ,
-        model_id="llama3-70b-8192",
-        key_env="GROQ_API_KEY",
-        description="Meta Llama 3 70B on Groq — fast, general purpose",
-    ),
     "groq-gpt-oss-120b": ModelSpec(
         key="groq-gpt-oss-120b",
         provider=ProviderName.GROQ,
@@ -103,42 +96,29 @@ MODEL_REGISTRY: dict[str, ModelSpec] = {
         description="Groq GPT-OSS 120B — strongest reasoning on Groq",
         timeout_multiplier=3.0,
     ),
-    "groq-gpt-oss-20b": ModelSpec(
-        key="groq-gpt-oss-20b",
+    "groq-qwen3-8-27b": ModelSpec(
+        key="groq-qwen3-8-27b",
         provider=ProviderName.GROQ,
-        model_id="openai/gpt-oss-20b",
+        model_id="qwen/qwen3-8-27b",
         key_env="GROQ_API_KEY",
-        description="Groq GPT-OSS 20B — fast, cheap sibling",
-    ),
-    # --- NVIDIA NIM (free tier; needs NVIDIA_API_KEY from build.nvidia.com) ---
-    "nvidia-llama33": ModelSpec(
-        key="nvidia-llama33",
-        provider=ProviderName.NVIDIA,
-        model_id="meta/llama-3.3-70b-instruct",
-        key_env="NVIDIA_API_KEY",
-        description="Meta Llama 3.3 70B on NVIDIA — fast, general purpose",
-    ),
-    "nvidia-gpt-oss-120b": ModelSpec(
-        key="nvidia-gpt-oss-120b",
-        provider=ProviderName.NVIDIA,
-        model_id="openai/gpt-oss-120b",
-        key_env="NVIDIA_API_KEY",
-        description="OpenAI GPT-OSS 120B on NVIDIA — open-weight, strong reasoning",
+        description="Groq Qwen3 8x27B — mixture of experts model",
         timeout_multiplier=3.0,
     ),
-    "nvidia-llama-3-1-70b": ModelSpec(
-        key="nvidia-llama-3-1-70b",
-        provider=ProviderName.NVIDIA,
-        model_id="meta/llama-3.1-70b-instruct",
-        key_env="NVIDIA_API_KEY",
-        description="Meta Llama 3.1 70B Instruct on NVIDIA — solid general purpose",
-    ),
+    # --- NVIDIA NIM (free tier; needs NVIDIA_API_KEY from build.nvidia.com) ---
     "nvidia-nemotron-ultra": ModelSpec(
         key="nvidia-nemotron-ultra",
         provider=ProviderName.NVIDIA,
         model_id="nvidia/nemotron-3-ultra-550b-a55b",
         key_env="NVIDIA_API_KEY",
         description="NVIDIA Nemotron 3 Ultra 550B — biggest reasoning model",
+        timeout_multiplier=3.0,
+    ),
+    "nvidia-nemotron-super": ModelSpec(
+        key="nvidia-nemotron-super",
+        provider=ProviderName.NVIDIA,
+        model_id="nvidia/nemotron-3-super-120b-a12b",
+        key_env="NVIDIA_API_KEY",
+        description="NVIDIA Nemotron 3 Super 120B — latest NVIDIA model",
         timeout_multiplier=3.0,
     ),
     # --- Google Gemini (free tier; needs GEMINI_API_KEY from makersuite.google.com) ---
@@ -150,17 +130,33 @@ MODEL_REGISTRY: dict[str, ModelSpec] = {
         description="Google Gemini 3.1 Flash Lite — fast, efficient, optimized for cost",
         supports_json_mode=False,
     ),
-    "gemini-15-flash": ModelSpec(
-        key="gemini-15-flash",
+    "gemini-35-flash-lite": ModelSpec(
+        key="gemini-35-flash-lite",
         provider=ProviderName.GEMINI,
-        model_id="gemini-1.5-flash",
+        model_id="gemini-3.5-flash-lite",
         key_env="GEMINI_API_KEY",
-        description="Google Gemini 1.5 Flash — legacy model version",
+        description="Google Gemini 3.5 Flash Lite — fast, efficient, optimized for cost",
+        supports_json_mode=False,
+    ),
+    "gemini-38-flash": ModelSpec(
+        key="gemini-38-flash",
+        provider=ProviderName.GEMINI,
+        model_id="gemini-3.8-flash",
+        key_env="GEMINI_API_KEY",
+        description="Google Gemini 3.8 Flash — fast, efficient, optimized for cost",
+        supports_json_mode=False,
+    ),
+    "gemini-37-flash": ModelSpec(
+        key="gemini-37-flash",
+        provider=ProviderName.GEMINI,
+        model_id="gemini-3.7-flash",
+        key_env="GEMINI_API_KEY",
+        description="Google Gemini 3.7 Flash — fast, efficient, optimized for cost",
         supports_json_mode=False,
     ),
 }
 
-DEFAULT_MODEL_KEY = "gemini-31-flash-lite"
+DEFAULT_MODEL_KEY = "gemini-35-flash-lite"
 
 
 # ═══════════════════════════════════════════════════════════════════════════

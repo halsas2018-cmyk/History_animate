@@ -1,11 +1,11 @@
-import { wipe } from "@remotion/transitions/wipe";
+import { wipe, WipeDirection } from "@remotion/transitions/wipe";
 import { linearTiming } from "@remotion/transitions";
 
 /**
  * Returns a wipe transition presentation configuration for use with TransitionSeries.Transition.
  * Gives a page-opening-style wipe between history scenes.
  */
-export const getSceneTransition = (direction: string = "from-right") => {
+export const getSceneTransition = (direction: WipeDirection = "from-right") => {
   return wipe({
     direction,
   });

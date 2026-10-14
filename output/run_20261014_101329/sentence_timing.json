@@ -1,0 +1,90 @@
+{
+  "stage": "sentence_timing",
+  "data": {
+    "sentence_timing": [
+      {
+        "sentence_index": 0,
+        "text": "Roman law maintained order through public displays of brutal retribution.",
+        "startFrame": 2,
+        "endFrame": 96,
+        "durationInFrames": 94
+      },
+      {
+        "sentence_index": 1,
+        "text": "Crucifixion, known as the extreme punishment, was reserved for slaves and rebels to instill absolute terror.",
+        "startFrame": 99,
+        "endFrame": 251,
+        "durationInFrames": 152
+      },
+      {
+        "sentence_index": 2,
+        "text": "Victims were scourged before being nailed to a cross, suffering until death by asphyxiation.",
+        "startFrame": 252,
+        "endFrame": 382,
+        "durationInFrames": 130
+      },
+      {
+        "sentence_index": 3,
+        "text": "Constantine the Great finally abolished this practice in the fourth century.",
+        "startFrame": 384,
+        "endFrame": 478,
+        "durationInFrames": 94
+      },
+      {
+        "sentence_index": 4,
+        "text": "For the crime of parricide, Romans enacted the punishment of the sack.",
+        "startFrame": 478,
+        "endFrame": 568,
+        "durationInFrames": 90
+      },
+      {
+        "sentence_index": 5,
+        "text": "Offenders were sewn into a leather bag with a dog, a rooster, a viper, and a monkey before being cast into water.",
+        "startFrame": 571,
+        "endFrame": 727,
+        "durationInFrames": 156
+      },
+      {
+        "sentence_index": 6,
+        "text": "This ritual symbolized the murderer's bestial nature.",
+        "startFrame": 728,
+        "endFrame": 798,
+        "durationInFrames": 70
+      },
+      {
+        "sentence_index": 7,
+        "text": "Finally, the arena hosted the horror of condemnation to the beasts.",
+        "startFrame": 801,
+        "endFrame": 884,
+        "durationInFrames": 83
+      },
+      {
+        "sentence_index": 8,
+        "text": "Commoners and Christians were thrown to lions and bears for public entertainment.",
+        "startFrame": 887,
+        "endFrame": 993,
+        "durationInFrames": 106
+      },
+      {
+        "sentence_index": 9,
+        "text": "These punishments reinforced the state's power, while the elite enjoyed the privilege of a dignified beheading.",
+        "startFrame": 994,
+        "endFrame": 1126,
+        "durationInFrames": 132
+      },
+      {
+        "sentence_index": 10,
+        "text": "For the rest of the Roman populace, the law offered only a slow, gruesome end.",
+        "startFrame": 1126,
+        "endFrame": 1233,
+        "durationInFrames": 107
+      }
+    ],
+    "audio_path": "narration.mp3",
+    "duration": 41.143
+  },
+  "meta": {
+    "sentence_count": 11,
+    "word_count": 146
+  }
+}

@@ -93,45 +93,88 @@ const DEFAULT_VISUAL_TIMING_DATA: VisualTimingData = {
 const FPS = 30;
 const DEFAULT_TRANSITION_DURATION_IN_FRAMES = 12; // 0.4s @ 30fps
 
-const calculateMetadata: CalculateMetadataFunction<CompositionProps> = async ({
-  props,
-}) => {
-  let timingData = props.visualTimingData;
+export const getCalculateMetadata = (
+  width: number,
+  height: number,
+): CalculateMetadataFunction<CompositionProps> => {
+  return async ({ props }) => {
+    let timingData = props.visualTimingData;
 
-  if (!timingData) {
-    try {
-      const response = await fetch(staticFile("visual_timing.json"));
-      if (response.ok) {
-        timingData = (await response.json()) as VisualTimingData;
+    if (!timingData) {
+      try {
+        const response = await fetch(staticFile("visual_timing.json"));
+        if (response.ok) {
+          timingData = (await response.json()) as VisualTimingData;
+        }
+      } catch {
+        // Fallback if fetch fails
+        timingData = DEFAULT_VISUAL_TIMING_DATA;
       }
-    } catch {
-      // Fallback if fetch fails
+    }
+
+    if (!timingData || !timingData.data?.visuals?.length) {
       timingData = DEFAULT_VISUAL_TIMING_DATA;
     }
-  }
 
-  if (!timingData || !timingData.data?.visuals?.length) {
-    timingData = DEFAULT_VISUAL_TIMING_DATA;
-  }
+    const visuals = timingData.data.visuals;
+    const lastVisual = visuals[visuals.length - 1];
+    const totalDurationSeconds = lastVisual ? lastVisual.end : 59.267;
+    const durationInFrames = Math.max(1, Math.round(totalDurationSeconds * FPS));
 
-  const visuals = timingData.data.visuals;
-  const lastVisual = visuals[visuals.length - 1];
-  const totalDurationSeconds = lastVisual ? lastVisual.end : 59.267;
-  const durationInFrames = Math.max(1, Math.round(totalDurationSeconds * FPS));
-
-  return {
-    durationInFrames,
-    fps: FPS,
-    width: 1080,
-    height: 1920,
-    props: {
-      ...props,
-      visualTimingData: timingData,
-    },
+    return {
+      durationInFrames,
+      fps: FPS,
+      width,
+      height,
+      props: {
+        ...props,
+        visualTimingData: timingData,
+      },
+    };
   };
 };
 
-export const MyComposition = () => {
+export const ShortComposition: React.FC = () => {
+  return (
+    <Composition
+      id="ShortComp"
+      component={MyComponent}
+      durationInFrames={1778}
+      fps={FPS}
+      width={1080}
+      height={1920}
+      schema={undefined}
+      calculateMetadata={getCalculateMetadata(1080, 1920)}
+      defaultProps={{
+        audioSrc: "narration.mp3",
+        transitionAudioSrc: "page-flip.mp3",
+        transitionDurationInFrames: DEFAULT_TRANSITION_DURATION_IN_FRAMES,
+      }}
+    />
+  );
+};
+
+export const LongComposition: React.FC = () => {
+  return (
+    <Composition
+      id="LongComp"
+      component={MyComponent}
+      durationInFrames={1778}
+      fps={FPS}
+      width={1920}
+      height={1080}
+      schema={undefined}
+      calculateMetadata={getCalculateMetadata(1920, 1080)}
+      defaultProps={{
+        audioSrc: "narration.mp3",
+        transitionAudioSrc: "page-flip.mp3",
+        transitionDurationInFrames: DEFAULT_TRANSITION_DURATION_IN_FRAMES,
+      }}
+    />
+  );
+};
+
+export const MyComposition: React.FC = () => {
   return (
     <Composition
       id="MyComp"
@@ -141,7 +184,7 @@ export const MyComposition = () => {
       width={1080}
       height={1920}
       schema={undefined}
-      calculateMetadata={calculateMetadata}
+      calculateMetadata={getCalculateMetadata(1080, 1920)}
       defaultProps={{
         audioSrc: "narration.mp3",
         transitionAudioSrc: "page-flip.mp3",

@@ -1,0 +1,21 @@
+{
+  "stage": "youtube_metadata",
+  "data": {
+    "title": "Justice and Terror: The Brutal Punishments of Ancient Rome",
+    "description": "How did Ancient Rome maintain control over its vast population? Behind the grandeur of the Roman Empire lay a legal system built on fear, public spectacle, and extreme retribution. \n\nIn this video, we explore the darkest corners of Roman justice, from the agonizing reality of crucifixion to the bizarre and symbolic 'punishment of the sack' for parricide. We also examine the grim entertainment of the arena, where condemnation to the beasts served as both a legal sentence and a public display of the state's absolute power. Discover the stark divide between the elite's dignified executions and the gruesome fates reserved for the common people.\n\nKey topics covered:\n- The history and abolition of crucifixion.\n- The symbolic ritual of the 'punishment of the sack'.\n- Public executions in the Roman arena.\n- How the Roman legal system reinforced state authority.\n\nIf you enjoyed this deep dive into the harsh realities of antiquity, make sure to like, comment, and subscribe for more historical insights into the ancient world!\n\n#History #AncientRome #RomanEmpire #Educational #Documentary #RomanLaw #HistoryFacts",
+    "hashtags": [
+      "#History",
+      "#AncientRome",
+      "#RomanEmpire",
+      "#Educational",
+      "#Documentary",
+      "#RomanLaw",
+      "#HistoryFacts",
+      "#Antiquity",
+      "#TrueCrimeHistory"
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite"
+  }
+}

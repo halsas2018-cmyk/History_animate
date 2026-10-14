@@ -4,9 +4,19 @@ on:
   workflow_dispatch:
     inputs:
       run_directory:
-        description: 'Path to the run directory containing Pipeline 2 output (e.g., output/run_20261009_072307)'
+        description: 'Path to the run directory containing Pipeline output (e.g., output/run_20261009_072307)'
         required: true
         type: string
+      composition:
+        description: 'Composition to render (auto: auto-detect from run metadata, LongComp: 16:9 landscape, ShortComp: 9:16 vertical, MyComp: default alias)'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - LongComp
+          - ShortComp
+          - MyComp
 
 jobs:
   render:
@@ -24,7 +34,7 @@ jobs:
             echo "Error: Directory '$RUN_DIRECTORY' does not exist."
             exit 1
           fi
-          # Check for required Pipeline 2 files
+          # Check for required Pipeline files
           REQUIRED_FILES=("story_generation.json" "sentence_timing.json" "visual_planning.json" "visual_timing.json" "asset_preparation.json" "narration.mp3")
           for file in "${REQUIRED_FILES[@]}"; do
             if [ ! -f "$RUN_DIRECTORY/$file" ]; then
@@ -69,14 +79,52 @@ jobs:
         run: npm ci
         working-directory: my-video
 
+      - name: Determine Remotion Composition
+        id: select-comp
+        run: |
+          INPUT_COMP="${{ github.event.inputs.composition }}"
+          RUN_DIRECTORY="${{ github.event.inputs.run_directory }}"
+
+          if [ "$INPUT_COMP" != "auto" ] && [ -n "$INPUT_COMP" ]; then
+            SELECTED_COMP="$INPUT_COMP"
+          else
+            # Auto-detect length_mode from run directory metadata
+            DETECTED_MODE=$(python3 -c "
+          import json, sys
+          run_dir = sys.argv[1]
+          mode = 'short'
+          for fname in ['story_generation.json', 'visual_planning.json']:
+              p = f'{run_dir}/{fname}'
+              try:
+                  with open(p, encoding='utf-8') as f:
+                      d = json.load(f)
+                      m = d.get('meta', {}).get('length_mode')
+                      if m in ('short', 'long'):
+                          mode = m
+                          break
+              except Exception:
+                  pass
+          print(mode)
+          " "$RUN_DIRECTORY")
+
+            if [ "$DETECTED_MODE" = "long" ]; then
+              SELECTED_COMP="LongComp"
+            else
+              SELECTED_COMP="ShortComp"
+            fi
+          fi
+
+          echo "Selected Remotion composition: $SELECTED_COMP"
+          echo "composition=$SELECTED_COMP" >> "$GITHUB_OUTPUT"
+
       - name: Render video with Remotion
-        run: npx remotion render MyComp out.mp4
+        run: npx remotion render "${{ steps.select-comp.outputs.composition }}" out.mp4
         working-directory: my-video
 
       - name: Upload rendered video
         uses: actions/upload-artifact@v4
         with:
-          name: remotion-video
+          name: remotion-video-${{ steps.select-comp.outputs.composition }}
           path: my-video/out.mp4
 
       - name: Upload whiteboard scenes

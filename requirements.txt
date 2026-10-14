@@ -1,3 +1,5 @@
 numpy
 Pillow
 whiteboard-animator
+pydub
+audioop-lts

@@ -52,12 +52,12 @@ CRITICAL RULES:
 1. GROUPING: Decide dynamically whether consecutive narration sentences should \
    share ONE visual or use SEPARATE visuals. Group sentences that describe the \
    SAME scene, event, location, or continuous action. Split when the narration \
-   shifts to a new location, time period, subject, or visual concept.Do not merge\
-   morethan 2 sentences togather.
+   shifts to a new location, time period, subject, or visual concept. Do not merge\
+   more than 2 sentences together.
 2. COVERAGE: Every sentence must be covered EXACTLY ONCE. The sentence_indices \
    across all visuals must partition the full range [0, N-1] in order.
 3. PROMPT CONTENT: Each image_prompt MUST explicitly include:
-   - "1080x1920 vertical composition"
+   - {dimension_spec}
    - "pure white background"
    - Historically appropriate visual elements (period-accurate clothing, \
      architecture, tools, vehicles, landscapes, etc.)
@@ -109,7 +109,7 @@ Plan the visuals now. Return only the requested JSON.
 # Validators
 # ---------------------------------------------------------------------------
 
-def validate_visual_plan_contract(plan: dict, num_sentences: int) -> None:
+def validate_visual_plan_contract(plan: dict, num_sentences: int, length_mode: str = "short") -> None:
     """Raise ValueError/TypeError if *plan* violates the output contract."""
     if not isinstance(plan, dict):
         raise TypeError(f"Visual plan must be a dict, got {type(plan).__name__}")
@@ -130,6 +130,12 @@ def validate_visual_plan_contract(plan: dict, num_sentences: int) -> None:
         raise TypeError(f"visual_plan must be a list, got {type(visual_plan).__name__}")
     if not visual_plan:
         raise ValueError("visual_plan must be non-empty")
+
+    # Determine expected dimension keyword based on length mode
+    if length_mode == "long":
+        expected_dimension = "1920x1080 landscape composition"
+    else:
+        expected_dimension = "1080x1920 vertical composition"
 
     # Check coverage: every sentence index 0..num_sentences-1 appears exactly once
     covered = []
@@ -169,7 +175,7 @@ def validate_visual_plan_contract(plan: dict, num_sentences: int) -> None:
 
         # Check required keywords in prompt
         required_keywords = [
-            "1080x1920 vertical composition",
+            expected_dimension,
             "pure white background",
         ]
         for kw in required_keywords:
@@ -210,6 +216,7 @@ def plan_visuals(
     story: dict,
     *,
     model_key: Optional[str] = None,
+    length_mode: str = "short",
 ) -> dict:
     """Generate a visual plan from a story artifact.
 
@@ -261,10 +268,19 @@ def plan_visuals(
         sentences=numbered,
     )
 
+    # Determine dimension specification based on length mode
+    if length_mode == "long":
+        dimension_spec = "1920x1080 landscape composition"
+    else:
+        dimension_spec = "1080x1920 vertical composition"
+
+    # Format the system prompt with the dimension specification
+    formatted_system_prompt = _VISUAL_SYSTEM_PROMPT.replace("{dimension_spec}", dimension_spec)
+
     # --- Single LLM call -----------------------------------------------------
     raw = llm_client.call_llm(
         messages=[
-            {"role": "system", "content": _VISUAL_SYSTEM_PROMPT},
+            {"role": "system", "content": formatted_system_prompt},
             {"role": "user", "content": user_prompt},
         ],
         model_key=resolved_key,
@@ -281,7 +297,7 @@ def plan_visuals(
         ) from exc
 
     # --- Validate ------------------------------------------------------------
-    validate_visual_plan_contract(parsed, len(sentences))
+    validate_visual_plan_contract(parsed, len(sentences), length_mode)
 
     return parsed
 

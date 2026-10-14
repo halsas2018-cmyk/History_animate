@@ -1,0 +1,57 @@
+{
+  "stage": "visual_planning",
+  "data": {
+    "visual_plan": [
+      {
+        "sentence_indices": [
+          0,
+          1
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, thick black marker outlines. A Roman wooden cross standing prominently in the center. A Roman soldier in simple tunic and helmet holding a spear standing nearby. Minimalist, clean lines, no shading, no background detail."
+      },
+      {
+        "sentence_indices": [
+          2
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, thick black marker outlines. A close-up of a human hand with a large iron nail through the palm, isolated. Clean, bold lines, educational illustration, no realistic textures or shadows."
+      },
+      {
+        "sentence_indices": [
+          3
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, thick black marker outlines. A Roman imperial bust of Constantine wearing a laurel wreath, depicted with simple, clear outlines. A large 'X' symbol drawn over a cross icon to symbolize abolition. Minimalist, high-contrast, flat design."
+      },
+      {
+        "sentence_indices": [
+          4,
+          5
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, thick black marker outlines. A large leather sack with visible stitching. Surrounding the sack are simple, iconic silhouettes of a dog, a rooster, a snake, and a monkey. Clear, separated shapes, no complex textures."
+      },
+      {
+        "sentence_indices": [
+          6
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, thick black marker outlines. A human silhouette merging into animal shapes to represent bestial nature. Bold, simple line art, large recognizable shapes, generous white space."
+      },
+      {
+        "sentence_indices": [
+          7,
+          8
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, thick black marker outlines. A simple circular arena outline. Inside, a stylized lion and a bear facing a human figure. Minimalist, clear silhouettes, no shading or complex background."
+      },
+      {
+        "sentence_indices": [
+          9,
+          10
+        ],
+        "image_prompt": "1080x1920 vertical composition, pure white background, simple hand-drawn whiteboard style, thick black marker outlines. A split composition: on one side, a simple sword icon representing a dignified beheading, on the other side, a jagged, chaotic line representing a gruesome end. Large, bold, simple icons, no decorative elements."
+      }
+    ]
+  },
+  "meta": {
+    "model_key": "gemini-31-flash-lite",
+    "length_mode": "short"
+  }
+}

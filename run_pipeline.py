@@ -30,6 +30,7 @@ import asset_preparation
 import voice_generation
 import whisperx_timing
 import sentence_timing
+import youtube_metadata
 from llm_client import load_env_file
 
 
@@ -110,10 +111,25 @@ def stage_visual_planning(config: PipelineConfig, prev: dict) -> PipelineArtifac
     plan = visual_planning.plan_visuals(
         story=prev,
         model_key=config.model_key,
+        length_mode=config.length_mode,
     )
     return PipelineArtifact(
         stage_name="visual_planning",
         data=plan,
+        metadata={"model_key": config.model_key, "length_mode": config.length_mode},
+    )
+
+
+def stage_youtube_metadata(config: PipelineConfig, prev: dict) -> PipelineArtifact:
+    """Stage: Generate YouTube metadata from the story."""
+    # prev is the story artifact from story_generation
+    metadata = youtube_metadata.generate_youtube_metadata(
+        story=prev,
+        model_key=config.model_key,
+    )
+    return PipelineArtifact(
+        stage_name="youtube_metadata",
+        data=metadata,
         metadata={"model_key": config.model_key},
     )
 
@@ -127,6 +143,7 @@ PIPELINE_STAGES: list[StageFn] = [
     stage_visual_planning,
     visual_timing.stage_visual_timing,
     asset_preparation.stage_asset_preparation,
+    stage_youtube_metadata,
     # Future: stage_image_generation, stage_whiteboard, stage_remotion, ...
 ]
 
